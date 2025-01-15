@@ -1,0 +1,18 @@
+.about {
+  padding-top: 131px;
+  font-size: 24px;
+
+  &__description {
+    width: 600px;
+  }
+
+  &__click {
+    margin-top: 95px;
+    border: 3px solid var(--color-yellow);
+    width: 374px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

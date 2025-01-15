@@ -1,0 +1,172 @@
+.header {
+  &__inner {
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include desktop {
+      padding-top: 30px;
+      padding-inline: 50px;
+      font-size: 16px;
+    }
+    @include mobile {
+      padding-inline: 22px;
+      padding-top: 22px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-left: auto;
+
+    @include desktop {
+      gap: 40px;
+    }
+
+    @include tablet {
+      gap: 60px;
+    }
+
+    @include mobile {
+      font-size: 10px;
+      gap: 50px;
+    }
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-gray);
+  }
+}
+
+.burger {
+  width: 50px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+
+  @include mobile {
+    width: 35px;
+    height: 22px;
+  }
+}
+
+.burger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #ffffff;
+
+  &:nth-child(2) {
+    background-color: var(--color-yellow);
+  }
+
+  &:nth-child(3) {
+    width: 25px;
+    margin-left: auto;
+
+    @include mobile {
+      width: 17px;
+    }
+  }
+
+  @include mobile {
+    height: 2px;
+  }
+}
+
+.border--gray {
+  border-bottom: 1px dashed var(--color-gray);
+}
+
+.preview {
+  width: 100vw;
+  height: 814px;
+  object-fit: cover;
+
+  @include desktop {
+    max-height: 614px;
+  }
+
+  @include  tablet {
+    max-height: 414px;
+  }
+
+  @include mobile {
+    max-height: 212px;
+  }
+}
+
+.block--yellow {
+  width: 100vw;
+  height: 150px;
+  background-color: var(--color-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include desktop {
+    height: 100px;
+  }
+
+  @include mobile {
+    height: 50px;
+  }
+}
+
+.title {
+  text-align: center;
+  color: var(--color-dark);
+  padding-inline: 22px;
+}
+.welcome {
+  padding-top: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include desktop {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 28px;
+  }
+}
+
+.number,
+.vk-link {
+  @include tablet {
+    display: none;
+  }
+}
+
+.logo {
+  @include mobile {
+    width: 64px;
+    height: 43px;
+  }
+}
+
+.map {
+
+  @include tablet {
+    width: 16px;
+    height: 20px;
+  }
+
+  @include mobile {
+    width: 8px;
+    height: 10px;
+  }
+}

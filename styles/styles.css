@@ -1,0 +1,456 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/GothamPro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/GothamPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/GothamPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/**
+  Нормализация блочной модели
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+ */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+ */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+/**
+  Убираем внешние отступы вертикали нужным тегам,
+  у которых есть атрибут class
+ */
+:where(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+  Убираем стандартный маркер маркированному списку,
+  у которого есть атрибут class
+ */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+  Упрощаем работу с изображениями
+ */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+  Наследуем свойства шрифт для полей ввода
+ */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  height: 100%;
+  /**
+    Плавный скролл
+   */
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  min-height: 100%;
+  /**
+    Унифицированный интерлиньяж
+   */
+  line-height: 1.5;
+}
+
+/**
+  Приводим к единому цвету svg-элементы
+ */
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+/**
+  Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+ */
+svg * {
+  transition-property: fill, stroke;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-dark: #141514;
+  --color-gray: #9A9797;
+  --color-yellow: #FFEA00;
+  --container-width:auto;
+  --container-padding-x: 86px;
+  --container-width-mobile:auto;
+  --container-padding-x-mobile: 22px;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/GothamPro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/GothamPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("fonts/GothamPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* Общие настройки скроллбара */
+::-webkit-scrollbar {
+  width: 4px; /* Узкий вертикальный скроллбар */
+  height: 4px; /* Узкий горизонтальный скроллбар */
+}
+
+/* Убираем фон трека */
+::-webkit-scrollbar-track {
+  background: transparent; /* Прозрачный трек */
+}
+
+/* Настраиваем бегунок */
+::-webkit-scrollbar-thumb {
+  background: #555555; /* Цвет бегунка */
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 19px;
+  scroll-behavior: smooth;
+  font-family: "Gotham Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  font-size: clamp(10px, 1.9444444444vw, 28px);
+}
+
+p {
+  font-size: clamp(14px, 1.6666666667vw, 24px);
+  font-weight: normal;
+}
+
+span {
+  font-weight: 500;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2) !important;
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: calc(var(--container-width-mobile) + var(--container-padding-x-mobile) * 2) !important;
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x-mobile);
+  }
+}
+
+.header__inner {
+  margin: 0;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .header__inner {
+    padding-top: 30px;
+    padding-inline: 50px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .header__inner {
+    padding-inline: 22px;
+    padding-top: 22px;
+  }
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-left: auto;
+}
+@media (max-width: 1280px) {
+  .header__list {
+    gap: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .header__list {
+    gap: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .header__list {
+    font-size: 10px;
+    gap: 50px;
+  }
+}
+.header__map {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--color-gray);
+}
+
+.burger {
+  width: 50px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .burger {
+    width: 35px;
+    height: 22px;
+  }
+}
+
+.burger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.burger span:nth-child(2) {
+  background-color: var(--color-yellow);
+}
+.burger span:nth-child(3) {
+  width: 25px;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .burger span:nth-child(3) {
+    width: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .burger span {
+    height: 2px;
+  }
+}
+
+.border--gray {
+  border-bottom: 1px dashed var(--color-gray);
+}
+
+.preview {
+  width: 100vw;
+  height: 814px;
+  object-fit: cover;
+}
+@media (max-width: 1280px) {
+  .preview {
+    max-height: 614px;
+  }
+}
+@media (max-width: 1023px) {
+  .preview {
+    max-height: 414px;
+  }
+}
+@media (max-width: 767px) {
+  .preview {
+    max-height: 212px;
+  }
+}
+
+.block--yellow {
+  width: 100vw;
+  height: 150px;
+  background-color: var(--color-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .block--yellow {
+    height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .block--yellow {
+    height: 50px;
+  }
+}
+
+.title {
+  text-align: center;
+  color: var(--color-dark);
+  padding-inline: 22px;
+}
+
+.welcome {
+  padding-top: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .welcome {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .welcome {
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .number,
+  .vk-link {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 64px;
+    height: 43px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .map {
+    width: 16px;
+    height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .map {
+    width: 8px;
+    height: 10px;
+  }
+}
+
+.about {
+  padding-top: 131px;
+  font-size: 24px;
+}
+.about__description {
+  width: 600px;
+}
+.about__click {
+  margin-top: 95px;
+  border: 3px solid var(--color-yellow);
+  width: 374px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,51 @@
+
+
+/* Общие настройки скроллбара */
+::-webkit-scrollbar {
+  width: 4px; /* Узкий вертикальный скроллбар */
+  height: 4px; /* Узкий горизонтальный скроллбар */
+}
+
+/* Убираем фон трека */
+::-webkit-scrollbar-track {
+  background: transparent; /* Прозрачный трек */
+}
+
+/* Настраиваем бегунок */
+::-webkit-scrollbar-thumb {
+  background: #555555; /* Цвет бегунка */
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 19px;
+  scroll-behavior: smooth;
+  font-family: "Gotham Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  @include fluid-text(28, 10)
+}
+
+p {
+  @include fluid-text(24, 14);
+  font-weight: normal;
+}
+
+span {
+  font-weight: 500;
+}
