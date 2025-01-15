@@ -1,0 +1,10 @@
+.mentor {
+
+padding-top: 230px;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: var(--color-yellow);
+  }
+}

@@ -32,6 +32,7 @@ a {
   text-decoration: none;
   color: inherit;
   font-weight: 600;
+  @include fluid-text(19, 14)
 }
 
 h1,
@@ -46,6 +47,7 @@ p {
   font-weight: normal;
 }
 
-span {
-  font-weight: 500;
+button > a {
+  font-weight: 600;
+  @include fluid-text(24, 14)
 }

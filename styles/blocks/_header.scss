@@ -1,11 +1,18 @@
 .header {
+
+  position: sticky;
+  top: 0;
+  background-color: rgba(20, 21, 20, .9);
+  z-index: 1000;
+
   &__inner {
     margin: 0;
-    padding-top: 50px;
+    padding-top: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-inline:70px;
 
     @include desktop {
       padding-top: 30px;
@@ -15,6 +22,10 @@
     @include mobile {
       padding-inline: 22px;
       padding-top: 22px;
+    }
+
+    @media (max-width: 1840px) {
+      padding-inline: 86px;
     }
   }
 
@@ -35,7 +46,7 @@
 
     @include mobile {
       font-size: 10px;
-      gap: 50px;
+      gap: 40px;
     }
   }
 
@@ -137,6 +148,10 @@
 
   @include desktop {
     padding-top: 80px;
+  }
+
+  @include tablet {
+    padding-top: 60px;
   }
 
   @include mobile {
