@@ -2,6 +2,10 @@
 
 padding-top: 230px;
 
+  @include mobile {
+    padding-top: 90px;
+  }
+
   &__title {
     display: flex;
     justify-content: center;

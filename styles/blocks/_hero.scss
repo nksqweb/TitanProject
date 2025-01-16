@@ -5,6 +5,13 @@
     padding-top: 180px;
   }
 
+  @include tablet {
+    padding-top: 140px;
+  }
+
+  @include mobile {
+    padding-top: 90px;
+  }
   &__title {
     display: flex;
     align-items: center;
@@ -17,6 +24,14 @@
     padding-top: 150px;
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      padding-top: 100px;
+    }
+
+    @include mobile {
+      padding-top: 63px;
+    }
   }
 }
 
@@ -26,6 +41,10 @@
   align-items: center;
   gap: 31px;
   font-weight: 800;
+
+  @include mobile {
+    gap: 12px;
+  }
 }
 
 .block-one span {
@@ -50,15 +69,77 @@
   flex-direction: column;
   gap: 90px;
 
+  @include mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-between;
+  }
+
   @include desktop {
     gap: 60px;
   }
 
+  @include mobile {
+    gap: 45px;
+  }
+
   &-list img {
     width: 88px;
+
+    @include tablet {
+      width: 77px;
+    }
+
+    @include mobile {
+      width: 45px;
+    }
   }
 }
 
 .block__description {
   display: grid;
+}
+
+.hero__block {
+  display: flex;
+}
+
+.button-hidden {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.button-hero {
+  @include mobile {
+    display: none;
+  }
+}
+
+.special {
+
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.block__text-hidden {
+  display: block;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.block__text-mobile {
+  display: none;
+  @include mobile {
+    display: block;
+    padding-top: 63px;
+  }
 }

@@ -3,17 +3,20 @@
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
 
-  @include mobile {
-    max-width: calc(var(--container-width-mobile) + var(--container-padding-x-mobile) * 2) !important;
-    margin-inline: auto;
-    padding-inline: var(--container-padding-x-mobile);
-  }
-
   @include desktop {
     padding-inline: 66px !important;
   }
 
+  @include tablet {
+    padding-inline: 40px !important;
+  }
+
   @media (max-width: 1840px) {
     padding-inline: 86px;
+  }
+
+
+  @include mobile {
+    padding-inline: 15px !important;
   }
 }

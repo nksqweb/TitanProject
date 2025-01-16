@@ -21,7 +21,7 @@
     }
     @include mobile {
       padding-inline: 22px;
-      padding-top: 22px;
+      padding-top: 18px;
     }
 
     @media (max-width: 1840px) {
@@ -55,6 +55,10 @@
     align-items: center;
     gap: 15px;
     color: var(--color-gray);
+
+    @include tablet {
+      gap: 10px;
+    }
   }
 }
 
@@ -167,21 +171,38 @@
 }
 
 .logo {
+
+  @include desktop {
+    max-width: 102px;
+    max-height: 70px;
+  }
+
+  @include tablet {
+    max-width: 70px;
+    max-height: 53px;
+  }
+
   @include mobile {
-    width: 64px;
-    height: 43px;
+    max-width: 64px;
+    max-height: 43px;
   }
 }
 
 .map {
 
+  @include desktop {
+    max-width: 22px;
+    max-height: 26px;
+  }
+
   @include tablet {
-    width: 16px;
-    height: 20px;
+    max-width: 16px;
+    max-height: 20px;
   }
 
   @include mobile {
-    width: 8px;
-    height: 10px;
+    max-width: 12px;
+    max-height: 16px;
+
   }
 }
