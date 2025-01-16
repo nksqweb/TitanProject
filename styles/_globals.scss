@@ -19,9 +19,8 @@
 body {
   background-color: var(--color-dark);
   color: var(--color-white);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 19px;
-  scroll-behavior: smooth;
   font-family: "Gotham Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
@@ -31,14 +30,14 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  font-weight: 600;
+  font-weight: 500;
   @include fluid-text(19, 12)
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 800;
+  font-weight: bold;
   @include fluid-text(28, 11)
 }
 
@@ -48,6 +47,17 @@ p {
 }
 
 button > a {
-  font-weight: 600;
-  @include fluid-text(24, 10)
+  font-weight: 500;
+  @include fluid-text(24, 10);
+}
+
+.button--hover {
+  border-bottom: 3px solid transparent;
+  color: var(--color-white);
+  transition: border-bottom 0.5s, color 0.5s;
+}
+
+.button--hover:hover {
+  border-bottom: 3px solid var(--color-white);
+  color: var(--color-yellow);
 }

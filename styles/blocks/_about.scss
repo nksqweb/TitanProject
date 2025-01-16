@@ -44,8 +44,8 @@
   }
 
   &__click {
-    border: 3px solid var(--color-yellow);
-    width: 374px;
+    border-bottom: 3px solid var(--color-yellow);
+    width: 300px;
     height: 78px;
       display: flex;
       align-items: center;
@@ -53,13 +53,13 @@
       margin-top: auto;
 
     @include desktop {
-      border: 2px solid var(--color-yellow);
+      border-bottom: 2px solid var(--color-yellow);
       width: 274px;
       height: 58px;
     }
 
     @include mobile {
-      border: 2px solid var(--color-yellow);
+      border-bottom: 2px solid var(--color-yellow);
       width: 151px;
       height: 33px;
       margin-top: 23px;
@@ -76,7 +76,6 @@
 
 .slider {
   max-width: 385px;
-  max-height: 431px;
   overflow: hidden;
 
 
@@ -92,11 +91,7 @@
 }
 
 .slider-line {
-    max-height: 431px;
-    max-width: 1155px;
     display: flex;
-    position: relative;
-    left: 0;
     transition: all ease 0.5s;
 
   @include desktop {
@@ -113,6 +108,7 @@
   display: flex;
   gap: 45px;
   margin-top: 22px;
+  margin-right: auto;
 }
 
 .slider-click img {
@@ -123,4 +119,10 @@
 
 .slider__block {
   order: 1;
+}
+
+.slider__block-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

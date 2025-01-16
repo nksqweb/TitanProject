@@ -49,11 +49,11 @@
 
 .block-one span {
   color: var(--color-yellow);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .block-one p {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .block-text {
@@ -125,6 +125,7 @@
   @include mobile {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
 }
 

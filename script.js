@@ -1,32 +1,40 @@
-let offset = 0;
-const sliderLine = document.querySelector('.slider-line');
+const images = document.querySelectorAll('.slider .slider-line img');
+const sliderLine = document.querySelector ('.slider-line');
+let count = 0;
+let widht;
 
-function moveNext() {
-    offset = offset + 385;
-    if (offset > 770) {
-        offset = 0;
-    }
-    sliderLine.style.left = -offset + 'px';
+function init() {
+    console.log ('resize');
+    widht = document.querySelector ('.slider').offsetWidth;
+    sliderLine.style.width = widht * images.length + 'px';
+    images.forEach(item => {
+        item.style.width = widht + 'px';
+        item.style.height = 'auto';
+    });
+    rollSlider();
 }
 
-function moveBack() {
-    offset = offset - 385;
-    if (offset < 0) {
-        offset = 770;
+window.addEventListener('resize', init);
+init();
+
+document.querySelector('.slider-back').addEventListener('click', function () {
+    count--;
+    if (count < 0) {
+        count = images.length -1;
     }
-    sliderLine.style.left = -offset + 'px';
+    rollSlider();
+});
+
+document.querySelector('.slider-next').addEventListener('click', function () {
+    count++;
+    if (count >= images.length) {
+        count = 0;
+    }
+    rollSlider();
+});
+
+
+function rollSlider() {
+    sliderLine.style.transform = 'translate(-'+count*widht + 'px)';
 }
 
-document.querySelector('.slider-next').addEventListener('click', moveNext);
-document.querySelector('.slider-back').addEventListener('click', moveBack);
-
-let autoSlide = setInterval(moveNext, 3000);
-
-const slider = document.querySelector('.slider');
-slider.addEventListener('mouseenter', () => {
-    clearInterval(autoSlide);
-});
-
-slider.addEventListener('mouseleave', () => {
-    autoSlide = setInterval(moveNext, 3000);
-});

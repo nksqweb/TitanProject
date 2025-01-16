@@ -100,13 +100,14 @@
   }
 }
 
-.border--gray {
+.header__map span {
   border-bottom: 1px dashed var(--color-gray);
+  padding-bottom: 3px;
 }
 
 .preview {
   width: 100vw;
-  height: 814px;
+  height: 818px;
   object-fit: cover;
 
   @include desktop {
@@ -190,10 +191,8 @@
 
 .map {
 
-  @include desktop {
-    max-width: 22px;
-    max-height: 26px;
-  }
+    max-width: 23px;
+    max-height: 27px;
 
   @include tablet {
     max-width: 16px;
