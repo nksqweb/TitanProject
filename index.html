@@ -7,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>titantaishet</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <header class="header">
     <div class="header__inner container">
         <a href="" class="home">
-        <img src="/images/logo.svg" alt="" class="logo">
+        <img src="/images/titan_logo_chb%20(3).svg" alt="" class="logo">
         </a>
         <div class="header__list">
             <a href="#" class="header__map">
@@ -58,15 +62,15 @@ width="1440" height="714">
             </div>
         </div>
         <div class="slider__block">
-            <div class="slider__block-center">
+            <div class="slider__block slider__block-center">
             <div class="slider">
                 <div class="slider-line">
                     <img src="/images/slider/1.jpg" alt="">
                     <img src="/images/slider/2.jpg" alt="">
                     <img src="/images/slider/3.jpg" alt="">
                     <img src="/images/slider/4.jpg" alt="">
-                    <img src="/images/slider/5.jpg" alt="">
                     <img src="/images/slider/6.jpg" alt="">
+                    <img src="/images/slider/5.jpg" alt="">
                 </div>
             </div>
             <div class="slider-click">
@@ -131,12 +135,171 @@ width="1440" height="714">
     <div class="mentor container">
         <div class="mentor__body">
             <div class="mentor__title">
-                <h3>Наставники Спортивного Клуба "Титан"</h3>
+                <h3>Наставники Спортивного клуба "Титан"</h3>
+            </div>
+            <div class="mentor__block">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="small" src="/images/mentors/1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="small" src="/images/mentors/2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="small" src="/images/mentors/3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="small" src="/images/mentors/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next flex"></div>
+                    <div class="swiper-button-prev flex"></div>
+                </div>
             </div>
         </div>
     </div>
 </main>
 
+<footer class="footer container mobile--hidden">
+    <div class="footer__navigation">
+        <div class="footer__flex">
+        <div class="navigation__block">
+            <h3 class="title--gap">
+                НАВИГАЦИЯ
+            </h3>
+            <ul class="navigation-list">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Достижения</a>
+                </li>
+                <li>
+                    <a href="#">Соревнования</a>
+                </li>
+                <li>
+                    <a href="#">История клуба</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contacts__block">
+                <h3 class="title--gap">
+                    КОНТАКТЫ</h3>
+                <ul class="contacts-list">
+                    <li>
+                        <a href="#">Телефон:<br/>
+                            <span>+7 (950) 079-03-09</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Почта:<br/>
+                            <span>titantaishet@mair.ru</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Часы работы:<br/>
+                            <span>Ежедневно, 9:00–21:00</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Адрес зала:<br/>
+                            <span>г. Тайшет, мкр. Новый 20/1,<br/>
+                            СК "Сибиряк" 2 этаж</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="info__block">
+            <div class="block-links">
+                <img class="logo" src="/images/titan_logo_chb%20(3).svg" alt="">
+                <div class="social">
+                <img class="footer-icon" src="/images/vk.svg" alt="">
+                <img class="footer-icon" src="/images/whatsapp.svg" alt="">
+                </div>
+            </div>
+            <div class="block-info">
+                <ul>
+                    <li>© Титан, 2025</li>
+                    <li>Разработка сайта: <br/>
+                        kogannsweb@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-mobile">
+    <div class="dropdown">
+        <div class="button-arrow">
+        <button onclick="navigation()" class="drop-button">НАВИГАЦИЯ</button>
+            <img src="/images/mobile-button.svg" alt="">
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+            <ul class="navigation-list">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Достижения</a>
+                </li>
+                <li>
+                    <a href="#">Соревнования</a>
+                </li>
+                <li>
+                    <a href="#">История клуба</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="button-arrow">
+            <button onclick="contacts()" class="drop-button">КОНТАКТЫ</button>
+            <img src="/images/mobile-button.svg" alt="">
+        </div>
+        <div id="drop-contacts" class="dropdown-content dropdown-bottom">
+            <ul class="contacts-list">
+                <li>
+                    <a href="#">Телефон:<br/>
+                        <span>+7 (950) 079-03-09</span></a>
+                </li>
+                <li>
+                    <a href="#">Почта:<br/>
+                        <span>titantaishet@mair.ru</span></a>
+                </li>
+                <li>
+                    <a href="#">Часы работы:<br/>
+                        <span>Ежедневно, 9:00–21:00</span></a>
+                </li>
+                <li>
+                    <a href="#">Адрес зала:<br/>
+                        <span>г. Тайшет, мкр. Новый 20/1,<br/>
+                            СК "Сибиряк" 2 этаж</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info__block">
+        <div class="block-links">
+            <img class="logo" src="/images/titan_logo_chb%20(3).svg" alt="">
+            <div class="social">
+                <img class="footer-icon" src="/images/vk.svg" alt="">
+                <img class="footer-icon" src="/images/whatsapp.svg" alt="">
+            </div>
+        </div>
+        <div class="block-info">
+            <ul>
+                <li>© Титан, 2025</li>
+                <li>Разработка сайта: <br/>
+                    kogannsweb@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

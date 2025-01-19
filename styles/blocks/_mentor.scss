@@ -10,5 +10,65 @@ padding-top: 230px;
     display: flex;
     justify-content: center;
     color: var(--color-yellow);
+    margin-bottom: 190px;
+
+    @include desktop {
+      margin-bottom: 150px;
+    }
+
+    @include mobile {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.swiper-button-next {
+  background-image: url(/images/slider/next.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  @include mobile {
+    width: 20px !important;
+  }
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(/images/slider/back.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  @include mobile {
+    width: 20px !important;
+  }
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.small {
+
+  @include desktop {
+    max-width: 70%;
+  }
+  @include mobile {
+    max-width: 50%;
+  }
+}
+
+.flex {
+  @include mobile {
+    width: 20px;
   }
 }

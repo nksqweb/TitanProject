@@ -27,7 +27,7 @@ body {
   line-height: normal;
 }
 
-a {
+a, li {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -46,9 +46,9 @@ p {
   font-weight: 300;
 }
 
-button > a {
+button > a, button {
   font-weight: 500;
-  @include fluid-text(24, 10);
+  @include fluid-text(24, 12);
 }
 
 .button--hover {
