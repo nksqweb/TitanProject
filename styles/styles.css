@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Medium.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Light.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -184,29 +184,29 @@ ul, li {
 }
 
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Medium.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Light.woff2") format("woff2");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -236,7 +236,7 @@ body {
   color: var(--color-white);
   font-weight: 300;
   font-size: 19px;
-  font-family: "Gotham Pro", sans-serif;
+  font-family: "GothamPro", sans-serif;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
   line-height: normal;
