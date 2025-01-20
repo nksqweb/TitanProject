@@ -6,41 +6,51 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>titantaishet</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<header class="header">
+<header data-aos="fade-down" class="header">
     <div class="header__inner container">
         <a href="" class="home">
-        <img src="/images/titan_logo_chb%20(3).svg" alt="" class="logo">
+        <img src="./images/titan_logo_chb%20(3).svg" alt="" class="logo">
         </a>
         <div class="header__list">
             <a href="#" class="header__map">
-                <img src="/images/map.svg" alt="" class="map">
+                <img src="./images/map.svg" alt="" class="map">
                 <span>
                     Тайшет
                 </span>
             </a>
             <a href="#" class="number">+7 (950) 079-03-09</a>
             <a href="#" class="vk-link">
-            <img src="/images/vk.svg" alt="" class="vk">
+            <img src="./images/vk.svg" alt="" class="vk">
             </a>
-            <button class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="burger__menu">
+                <button onclick="showModal()" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="modal">
+                    <button onclick="closeModal()" class="burger-close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </header>
-<img src="/images/preview.jpg" alt="" class="preview"
-width="1440" height="714">
+<img src="./images/preview.jpg" alt="" class="preview"
+width="1440" height="714" data-aos="zoom-out">
 
-<main class="main">
+<main class="main" data-aos="fade-up">
     <div class="welcome">
     <div class="block--yellow">
         <h1 class="title">Вас приветствует Спортивный клуб "Титан"<br/>
@@ -51,34 +61,34 @@ width="1440" height="714">
     <div class="about container">
         <div class="about__body">
             <div class="about__block block">
-                <div class="about__description">
+                <div class="about__description" data-aos="fade-right">
                     <p>Спортивный клуб "Титан" — это место для тех, кто стремится к здоровому образу жизни и физическому развитию.
                         В нашем клубе тренируются атлеты высокого уровня в различных дисциплинах — от кандидатов в мастера спорта (КМС) до мастеров спорта международного класса (МСМК)
                     </p>
                 </div>
-                <button class="about__click button--hover">
-                    <a href="#" class="about__link">О клубе "Титан" </a>
+                <button class="about__click button--hover" data-aos="fade-right">
+                    <a href="#" class="about__link">О клубе "Титан"</a>
                 </button>
             </div>
         </div>
-        <div class="slider__block">
+        <div class="slider__block" data-aos="fade-left">
             <div class="slider__block slider__block-center">
             <div class="slider">
                 <div class="slider-line">
-                    <img src="/images/slider/1.jpg" alt="">
-                    <img src="/images/slider/2.jpg" alt="">
-                    <img src="/images/slider/3.jpg" alt="">
-                    <img src="/images/slider/4.jpg" alt="">
-                    <img src="/images/slider/6.jpg" alt="">
-                    <img src="/images/slider/5.jpg" alt="">
+                    <img src="./images/slider/1.jpg" alt="">
+                    <img src="./images/slider/2.jpg" alt="">
+                    <img src="./images/slider/3.jpg" alt="">
+                    <img src="./images/slider/4.jpg" alt="">
+                    <img src="./images/slider/6.jpg" alt="">
+                    <img src="./images/slider/5.jpg" alt="">
                 </div>
             </div>
             <div class="slider-click">
             <button class="slider-back">
-                <img src="/images/slider/back.svg" alt="">
+                <img src="./images/slider/back.svg" alt="">
             </button>
             <button class="slider-next">
-                <img src="/images/slider/next.svg" alt="">
+                <img src="./images/slider/next.svg" alt="">
             </button>
             </div>
             </div>
@@ -87,26 +97,26 @@ width="1440" height="714">
 
     <div class="hero container">
         <div class="hero__body">
-            <div class="hero__title">
+            <div class="hero__title" data-aos="fade-up">
                 <h2>Присоединяйтесь к Спортивному клубу "Титан" <br/>
                     Достигните своих целей с нами!</h2>
             </div>
             <div class="hero__block">
                 <div class="block__quality">
-                    <div class="block__quality-list">
-                        <img src="/images/hero/square.svg" alt="">
+                    <div class="block__quality-list" data-aos="fade-left">
+                        <img src="./images/hero/square.svg" alt="">
                         <div class="block-one">
                             <p><span>200+ м2<br/></span> Площадь зала</p>
                         </div>
                     </div>
-                    <div class="block__quality-list">
-                        <img src="/images/hero/people.svg" alt="">
+                    <div class="block__quality-list" data-aos="fade-right">
+                        <img src="./images/hero/people.svg" alt="">
                         <div class="block-one">
                             <p><span>500+<br/></span> Участников</p>
                         </div>
                     </div>
-                    <div class="block__quality-list">
-                        <img src="/images/hero/check.svg" alt="">
+                    <div class="block__quality-list" data-aos="fade-left">
+                        <img src="./images/hero/check.svg" alt="">
                         <div class="block-one special">
                             <p><span>20+ <br/></span> Лет работы</p>
                         </div>
@@ -118,10 +128,10 @@ width="1440" height="714">
 
                 </div>
                     <div class="block__description">
-                <div class="block-text block__text-hidden">
+                <div class="block-text block__text-hidden"  data-aos="fade-left">
                     <p>В нашем клубе тренируются опытные наставники, которые будут рады помочь вам в ваших начинаниях.<br/> Также для всех желающих мы предлагаем разнообразные тренировки любого уровня подготовки, включая армрестлинг, кроссфит, индивидуальные занятия для женщин, такие как степ-аэробика, упражнения на слайдах и функциональные тренировки</p>
                 </div>
-                <button class="about__click button-hero button--hover">
+                <button class="about__click button-hero button--hover" data-aos="fade-right">
                     <a href="#" class="about__link">Наши достижения </a>
                 </button>
                     </div>
@@ -134,23 +144,23 @@ width="1440" height="714">
 
     <div class="mentor container">
         <div class="mentor__body">
-            <div class="mentor__title">
+            <div class="mentor__title" data-aos="fade-down">
                 <h3>Наставники Спортивного клуба "Титан"</h3>
             </div>
             <div class="mentor__block">
-                <div class="swiper">
+                <div class="swiper" data-aos="fade-up">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="small" src="/images/mentors/1.jpg" alt="">
+                            <img class="small" src="./images/mentors/1.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="small" src="/images/mentors/2.jpg" alt="">
+                            <img class="small" src="./images/mentors/2.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="small" src="/images/mentors/3.jpg" alt="">
+                            <img class="small" src="./images/mentors/3.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="small" src="/images/mentors/4.jpg" alt="">
+                            <img class="small" src="./images/mentors/4.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-button-next flex"></div>
@@ -164,7 +174,7 @@ width="1440" height="714">
 <footer class="footer container mobile--hidden">
     <div class="footer__navigation">
         <div class="footer__flex">
-        <div class="navigation__block">
+        <div class="navigation__block"  data-aos="fade-right">
             <h3 class="title--gap">
                 НАВИГАЦИЯ
             </h3>
@@ -184,7 +194,7 @@ width="1440" height="714">
             </ul>
         </div>
 
-        <div class="contacts__block">
+        <div class="contacts__block"  data-aos="fade-right">
                 <h3 class="title--gap">
                     КОНТАКТЫ</h3>
                 <ul class="contacts-list">
@@ -208,12 +218,12 @@ width="1440" height="714">
                 </ul>
             </div>
 
-        <div class="info__block">
+        <div class="info__block"  data-aos="fade-left">
             <div class="block-links">
-                <img class="logo" src="/images/titan_logo_chb%20(3).svg" alt="">
+                <img class="logo" src="./images/titan_logo_chb%20(3).svg" alt="">
                 <div class="social">
-                <img class="footer-icon" src="/images/vk.svg" alt="">
-                <img class="footer-icon" src="/images/whatsapp.svg" alt="">
+                <img class="footer-icon" src="./images/vk.svg" alt="">
+                <img class="footer-icon" src="./images/whatsapp.svg" alt="">
                 </div>
             </div>
             <div class="block-info">
@@ -232,7 +242,7 @@ width="1440" height="714">
     <div class="dropdown">
         <div class="button-arrow">
         <button onclick="navigation()" class="drop-button">НАВИГАЦИЯ</button>
-            <img src="/images/mobile-button.svg" alt="">
+            <img src="./images/mobile-button.svg" alt="">
         </div>
         <div id="myDropdown" class="dropdown-content">
             <ul class="navigation-list">
@@ -255,7 +265,7 @@ width="1440" height="714">
     <div class="dropdown">
         <div class="button-arrow">
             <button onclick="contacts()" class="drop-button">КОНТАКТЫ</button>
-            <img src="/images/mobile-button.svg" alt="">
+            <img src="./images/mobile-button.svg" alt="">
         </div>
         <div id="drop-contacts" class="dropdown-content dropdown-bottom">
             <ul class="contacts-list">
@@ -298,7 +308,7 @@ width="1440" height="714">
     </div>
 
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>

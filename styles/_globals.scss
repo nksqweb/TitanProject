@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth !important;
+}
 
 /* Общие настройки скроллбара */
 ::-webkit-scrollbar {
@@ -31,7 +33,7 @@ a, li {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  @include fluid-text(19, 12)
+  @include fluid-text(17, 14)
 }
 
 h1,
@@ -54,10 +56,17 @@ button > a, button {
 .button--hover {
   border-bottom: 3px solid transparent;
   color: var(--color-white);
-  transition: border-bottom 0.5s, color 0.5s;
 }
 
 .button--hover:hover {
-  border-bottom: 3px solid var(--color-white);
+  border: 3px solid var(--color-white);
   color: var(--color-yellow);
+}
+
+a:hover {
+  color: var(--color-yellow);
+}
+
+.contacts-list a:hover {
+  color: var(--color-gray);
 }

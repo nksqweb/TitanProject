@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   background-color: rgba(20, 21, 20, .9);
-  z-index: 1000;
+  z-index: 2000;
 
 
   &__inner {
@@ -72,6 +72,10 @@
   }
 }
 
+.header__map span {
+  color: var(--color-gray);
+}
+
 .burger {
   width: 50px;
   height: 32px;
@@ -88,34 +92,6 @@
   @include mobile {
     width: 35px;
     height: 22px;
-  }
-}
-
-.burger span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: #ffffff;
-
-  &:nth-child(2) {
-    background-color: var(--color-yellow);
-  }
-
-  &:nth-child(3) {
-    width: 25px;
-    margin-left: auto;
-
-    @include mobile {
-      width: 17px;
-    }
-  }
-
-  @include tablet {
-    height: 3px;
-  }
-
-  @include mobile {
-    height: 2px;
   }
 }
 
@@ -216,7 +192,7 @@
 .map {
 
     max-width: 23px;
-    max-height: 27px;
+    max-height: 19px;
 
   @include tablet {
     max-width: 16px;

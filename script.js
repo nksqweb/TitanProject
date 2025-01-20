@@ -125,6 +125,14 @@ function getDirection() {
     return direction;
 }
 
+AOS.init({
+    duration: 1500,
+    delay: 50,
+    offset:150,
+    mirror: false,
+    anchorPlacement: 'top-center',
+});
+
 
 function navigation() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -133,3 +141,5 @@ function navigation() {
 function contacts() {
     document.getElementById("drop-contacts").classList.toggle("show");
 }
+
+const burger = document.querySelector('.burger');

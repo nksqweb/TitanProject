@@ -1,0 +1,52 @@
+  .burger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+
+    &:nth-child(2) {
+      background-color: var(--color-yellow);
+    }
+
+    &:nth-child(3) {
+      width: 25px;
+      margin-left: auto;
+
+      @include mobile {
+        width: 17px;
+      }
+    }
+
+    @include tablet {
+      height: 3px;
+    }
+
+    @include mobile {
+      height: 2px;
+    }
+  }
+
+  .burger-close span{
+    display: block;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--color-yellow);
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+
+    }
+
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .burger-close {
+    display: none;
+    position: absolute;
+    top: 46px;
+    width: 50px;
+    left: auto !important;
+  }
