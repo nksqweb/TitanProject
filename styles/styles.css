@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro-Medium.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro-Bold.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro-Light.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -184,29 +184,29 @@ ul, li {
 }
 
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro-Medium.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro-Bold.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamPro-Light.woff2") format("woff2");
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -236,7 +236,7 @@ body {
   color: var(--color-white);
   font-weight: 300;
   font-size: 19px;
-  font-family: "GothamPro", sans-serif;
+  font-family: "Gotham Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
   line-height: normal;
@@ -913,7 +913,7 @@ a:hover {
 }
 
 .swiper-button-next {
-  background-image: url(images/slider/next.svg);
+  background-image: url(/images/slider/next.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -929,7 +929,7 @@ a:hover {
 }
 
 .swiper-button-prev {
-  background-image: url(images/slider/back.svg);
+  background-image: url(/images/slider/back.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
