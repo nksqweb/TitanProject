@@ -7,7 +7,6 @@
 
 
   &__inner {
-    margin-top: 20px;
     height: 95px;
     display: flex;
     justify-content: space-between;
@@ -20,7 +19,6 @@
     }
 
     @include desktop {
-      margin-top: 20px;
       height: 80px;
       padding-inline: 50px;
       font-size: 16px;
@@ -28,13 +26,11 @@
 
     @include tablet {
       padding-inline: 22px;
-      margin-top: 10px;
       height: 64px;
     }
 
     @include mobile {
       padding-inline: 22px;
-      margin-top: 5px;
       height: 58px;
     }
   }
@@ -74,25 +70,6 @@
 
 .header__map span {
   color: var(--color-gray);
-}
-
-.burger {
-  width: 50px;
-  height: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
-
-  @include tablet {
-    width: 46px;
-    height: 26px;
-  }
-
-  @include mobile {
-    width: 35px;
-    height: 22px;
-  }
 }
 
 .header__map span {
@@ -169,7 +146,7 @@
 .logo {
 
   width: auto;
-  height: 120px;
+  height: 112px;
   background-color: transparent;
 
   @include desktop {

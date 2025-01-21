@@ -1,8 +1,54 @@
-  .burger span {
+body {
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.burger {
+  width: 47px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  z-index: 5;
+
+  &.active {
+    height: auto;
+  }
+
+  @include tablet {
+    width: 46px;
+    height: 26px;
+  }
+
+  @include mobile {
+    width: 35px;
+    height: 22px;
+  }
+}
+
+.burger span {
     display: block;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: #ffffff;
+    transition: all 0.3s ease-out;
+
+
+  &.active {
+    position: absolute;
+    transform: rotate(-45deg);
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: scale(0);
+    }
+  }
 
     &:nth-child(2) {
       background-color: var(--color-yellow);
@@ -26,27 +72,63 @@
     }
   }
 
-  .burger-close span{
-    display: block;
-    height: 4px;
+  .item__link {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: auto;
+    padding-top: 350px;
+
+
+    & a {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+
+      &:hover {
+        color: var(--color-yellow);
+      }
+    }
+  }
+
+  .menu__body {
+    position: absolute;
+    z-index: -1;
+    bottom: 100%;
+    left: 0;
     width: 100%;
-    position: absolute;
-    background-color: var(--color-yellow);
-
-    &:nth-child(1) {
-      transform: rotate(45deg);
-
-    }
-
-    &:nth-child(2) {
-      transform: rotate(-45deg);
-    }
+    height: 100vh;
+    background-image: url("/images/menu.jpg");
+    background-size: cover;
+    transition: all 0.5s ease;
   }
 
-  .burger-close {
-    display: none;
-    position: absolute;
-    top: 46px;
-    width: 50px;
-    left: auto !important;
+  .menu__body.active {
+    transform: translateY(100%);
   }
+
+  .info__block {
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .menu__info {
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+  }
+
+  .span--yellow {
+    color: var(--color-yellow);
+  }
+
+  .block__social-header {
+    display: flex;
+    gap: 50px;
+    padding-left: 145px;
+  }
+
