@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth !important;
-  overflow-x: hidden;
 }
 
 /* Общие настройки скроллбара */
@@ -71,4 +70,17 @@ a:hover {
 
 .contacts-list a:hover {
   color: var(--color-gray);
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+[data-aos] {
+  transform-origin: center center;
+  max-width: 100%; /* Ограничение ширины */
+}
+
+[data-aos] {
+  overflow-anchor: none;
 }
