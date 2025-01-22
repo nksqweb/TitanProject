@@ -130,7 +130,7 @@ AOS.init({
     delay: 50,
     offset:150,
     mirror: false,
-    anchorPlacement: 'top-center',
+    anchorPlacement: 'center-bottom',
 });
 
 

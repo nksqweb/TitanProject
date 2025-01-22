@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro.woff2") format("woff2");
+  src: url("../fonts/GothamPro.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Medium.woff2") format("woff2");
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Light.woff2") format("woff2");
+  src: url("../fonts/GothamPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -185,34 +185,35 @@ ul, li {
 
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro.woff2") format("woff2");
+  src: url("../fonts/GothamPro.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Medium.woff2") format("woff2");
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/fonts/GothamPro-Light.woff2") format("woff2");
+  src: url("../fonts/GothamPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 html {
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 /* Общие настройки скроллбара */
@@ -386,10 +387,16 @@ a:hover {
 .header__map span {
   color: var(--color-gray);
 }
+.header__map span:hover {
+  color: var(--color-yellow);
+}
 
 .header__map span {
   border-bottom: 1px dashed var(--color-gray);
   padding-bottom: 3px;
+}
+.header__map span:hover {
+  border-bottom: 1px dashed var(--color-yellow);
 }
 
 .preview {
@@ -585,6 +592,18 @@ body.lock {
   margin-left: auto;
   padding-top: 350px;
 }
+@media (max-width: 1023px) {
+  .item__link {
+    padding-top: 250px;
+    gap: 43px;
+  }
+}
+@media (max-width: 767px) {
+  .item__link {
+    padding-top: 200px;
+    gap: 30px;
+  }
+}
 .item__link a {
   font-size: 24px;
   color: #ffffff;
@@ -594,6 +613,21 @@ body.lock {
 }
 .item__link a:hover {
   color: var(--color-yellow);
+}
+@media (max-width: 1280px) {
+  .item__link a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .item__link a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .item__link a {
+    font-size: 16px;
+  }
 }
 
 .menu__body {
@@ -618,11 +652,35 @@ body.lock {
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 1280px) {
+  .info__block {
+    font-size: 16px;
+    gap: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .info__block {
+    font-size: 14px;
+    gap: 26px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .info__block {
+    font-size: 12px;
+    gap: 20px;
+  }
+}
 
 .menu__info {
   display: flex;
   align-items: center;
   padding-top: 200px;
+}
+@media (max-width: 1023px) {
+  .menu__info {
+    padding-top: 150px;
+  }
 }
 
 .span--yellow {
@@ -633,6 +691,16 @@ body.lock {
   display: flex;
   gap: 50px;
   padding-left: 145px;
+}
+@media (max-width: 1280px) {
+  .block__social-header {
+    padding-left: 80px;
+    gap: 30px;
+  }
+}
+
+.opacity {
+  opacity: 0.5;
 }
 
 .about {
@@ -692,7 +760,7 @@ body.lock {
 }
 @media (max-width: 1280px) {
   .about__click {
-    border-bottom: 2px solid var(--color-yellow);
+    border: 2px solid var(--color-yellow);
     width: 244px;
     height: 58px;
   }
@@ -705,7 +773,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .about__click {
-    border-bottom: 2px solid var(--color-yellow);
+    border: 2px solid var(--color-yellow);
     width: 151px;
     height: 33px;
     margin-top: 23px;
@@ -754,6 +822,7 @@ body.lock {
   gap: 45px;
   margin-top: 22px;
   margin-right: auto;
+  color: #9A9797;
 }
 
 @media (max-width: 1280px) {
@@ -1057,14 +1126,14 @@ footer {
   gap: 27px;
 }
 
-.block-info ul {
+.info__text ul {
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 @media (max-width: 767px) {
-  .block-info ul {
+  .info__text ul {
     gap: 30px;
   }
 }
@@ -1125,12 +1194,12 @@ a > span {
 
 .dropdown-content {
   display: none;
-  height: 150px;
+  height: 160px;
   padding-top: 20px;
 }
 
 .dropdown-bottom {
-  height: 200px;
+  height: 230px;
 }
 
 .show {
@@ -1152,6 +1221,13 @@ a > span {
     flex-direction: column;
     gap: 30px;
   }
+}
+
+.block__info ul {
+  padding: 0;
+}
+.block__info li {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -70,11 +70,19 @@
 
 .header__map span {
   color: var(--color-gray);
+
+  &:hover {
+    color: var(--color-yellow);
+  }
 }
 
 .header__map span {
   border-bottom: 1px dashed var(--color-gray);
   padding-bottom: 3px;
+
+  &:hover {
+    border-bottom: 1px dashed var(--color-yellow);
+  }
 }
 
 .preview {

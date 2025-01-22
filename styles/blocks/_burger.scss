@@ -79,6 +79,16 @@ body {
     margin-left: auto;
     padding-top: 350px;
 
+    @include tablet {
+      padding-top: 250px;
+      gap: 43px;
+    }
+
+    @include mobile {
+      padding-top: 200px;
+      gap: 30px;
+    }
+
 
     & a {
       font-size: 24px;
@@ -89,6 +99,18 @@ body {
 
       &:hover {
         color: var(--color-yellow);
+      }
+
+      @include desktop {
+        font-size: 20px;
+      }
+
+      @include tablet {
+        font-size: 18px;
+      }
+
+      @include mobile {
+        font-size: 16px;
       }
     }
   }
@@ -114,12 +136,32 @@ body {
     gap: 50px;
     font-size: 18px;
     font-weight: 400;
+
+    @include desktop {
+      font-size: 16px;
+      gap: 30px;
+    }
+
+    @include tablet {
+      font-size: 14px;
+      gap: 26px;
+      flex-direction: column;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      gap: 20px;
+    }
   }
 
   .menu__info {
     display: flex;
     align-items: center;
     padding-top: 200px;
+
+    @include tablet {
+      padding-top: 150px;
+    }
   }
 
   .span--yellow {
@@ -130,5 +172,14 @@ body {
     display: flex;
     gap: 50px;
     padding-left: 145px;
+
+    @include desktop {
+      padding-left: 80px;
+      gap: 30px;
+    }
+  }
+
+  .opacity {
+    opacity: 0.5;
   }
 

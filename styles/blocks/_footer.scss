@@ -40,7 +40,7 @@ footer {
   gap: 27px;
 }
 
-.block-info ul {
+.info__text ul {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -106,11 +106,11 @@ a > span {
 
 .dropdown-content {
   display: none;
-  height: 150px;
+  height: 160px;
   padding-top: 20px;
 }
 .dropdown-bottom {
-  height: 200px;
+  height: 230px;
 }
 
 .show {display:block;}
@@ -130,3 +130,15 @@ a > span {
     gap: 30px;
   }
 }
+
+.block__info  {
+
+  & ul {
+    padding: 0;
+  }
+
+  & li {
+    padding-bottom: 30px;
+  }
+}
+
