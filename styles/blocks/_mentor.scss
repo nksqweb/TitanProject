@@ -1,6 +1,7 @@
 .mentor {
 
-padding-top: 230px;
+  overflow: hidden;
+  padding-top: 230px;
 
   @include mobile {
     padding-top: 90px;

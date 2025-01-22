@@ -302,7 +302,7 @@ a:hover {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2) !important;
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 @media (max-width: 1280px) {
   .container {
@@ -326,6 +326,7 @@ a:hover {
 }
 
 .header {
+  overflow: hidden;
   position: sticky;
   top: 0;
   background-color: rgba(20, 21, 20, 0.9);
@@ -1015,6 +1016,7 @@ body.lock {
 }
 
 .mentor {
+  overflow: hidden;
   padding-top: 230px;
 }
 @media (max-width: 767px) {
