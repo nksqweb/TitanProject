@@ -1064,7 +1064,7 @@ body.lock {
 }
 
 .swiper-button-prev {
-  background-image: url("..images/slider/back.svg");
+  background-image: url("../images/slider/back.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
