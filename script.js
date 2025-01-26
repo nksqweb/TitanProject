@@ -162,8 +162,7 @@ if (menu && menuButton) {
         menuClose.forEach(span => {
             span.classList.toggle('active');
         });
-
-
-        });
+    });
 }
+
 

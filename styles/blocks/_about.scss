@@ -113,12 +113,18 @@
   margin-top: 22px;
   margin-right: auto;
   color: #9A9797;
-}
 
-.slider-click img {
+
+
+.slider-click img, svg {
   @include desktop {
     width: 20px;
   }
+
+  @include mobile {
+    width: 22px;
+  }
+}
 }
 
 .slider__block {

@@ -34,24 +34,24 @@ a, li {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  @include fluid-text(17, 14)
+  @include fluid-text(17, 13)
 }
 
 h1,
 h2,
 h3 {
   font-weight: bold;
-  @include fluid-text(28, 11)
+  @include fluid-text(28, 13)
 }
 
 p {
-  @include fluid-text(24, 12);
+  @include fluid-text(24, 13);
   font-weight: 300;
 }
 
 button > a, button {
   font-weight: 500;
-  @include fluid-text(24, 12);
+  @include fluid-text(24, 13);
 }
 
 .button--hover {
