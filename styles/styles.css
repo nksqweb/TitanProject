@@ -254,7 +254,7 @@ h1,
 h2,
 h3 {
   font-weight: bold;
-  font-size: clamp(12px, 1.9444444444vw, 28px);
+  font-size: clamp(14px, 1.9444444444vw, 28px);
 }
 
 p {
@@ -1138,7 +1138,7 @@ footer {
 @media (max-width: 767px) {
   footer {
     padding-inline: 15px !important;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 50px;
   }
 }
