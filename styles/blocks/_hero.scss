@@ -69,6 +69,13 @@
   flex-direction: column;
   gap: 90px;
 
+  .about__click  {
+    @include mobile {
+      margin-top: auto;
+    }
+  }
+
+
   @include mobile {
     display: flex;
     flex-direction: row;

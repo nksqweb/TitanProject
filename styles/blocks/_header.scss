@@ -115,7 +115,7 @@
   }
 
   @include mobile {
-    height: 50px;
+    height: 57px;
   }
 }
 
@@ -123,6 +123,10 @@
   text-align: center;
   color: var(--color-dark);
   padding-inline: 22px;
+
+  @include mobile {
+    padding-inline: 10px;
+  }
 }
 .welcome {
   padding-top: 115px;

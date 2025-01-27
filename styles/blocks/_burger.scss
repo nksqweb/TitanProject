@@ -169,7 +169,13 @@ body {
   }
 
   .block__social-header {
+
+    svg {
+      width: 40px;
+    }
+
     display: flex;
+    align-items: center;
     gap: 50px;
     padding-left: 145px;
 

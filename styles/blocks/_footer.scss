@@ -106,10 +106,11 @@ a > span {
 
 .dropdown-content {
   display: none;
-  height: 160px;
+  height: 166px;
   padding-top: 20px;
 }
 .dropdown-bottom {
+  transition: all 1s;
   height: 230px;
 }
 
@@ -138,7 +139,7 @@ a > span {
   }
 
   & li {
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 }
 
