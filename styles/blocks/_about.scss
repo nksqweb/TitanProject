@@ -81,11 +81,12 @@
 
 .slider {
   max-width: 385px;
+  max-height: 431px;
   overflow: hidden;
 
 
   @include desktop {
-    max-width: 305px;
+    max-width: 260px;
   }
 
   @include mobile {
@@ -102,7 +103,7 @@
     max-height: 342px;
   }
   @include mobile {
-    max-height: 431px;
+    max-height: 480px;
     max-width: 1155px;
   }
 }
@@ -114,6 +115,9 @@
   margin-right: auto;
   color: #9A9797;
 
+  .slider-line img {
+    height: 385px;
+  }
 
 
 .slider-click img, svg {

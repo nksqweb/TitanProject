@@ -40,12 +40,13 @@ a, li {
 h1,
 h2,
 h3 {
-  font-weight: bold;
-  @include fluid-text(28, 12)
+  font-weight: 500;
+  text-shadow: #000000 0 0 17px;
+  @include fluid-text(26, 12)
 }
 
 p {
-  @include fluid-text(24, 13);
+  @include fluid-text(22, 13);
   font-weight: 300;
 
 

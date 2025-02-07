@@ -84,50 +84,54 @@
   }
 }
 
-.preview {
-  width: 100vw;
-  height: 818px;
-  object-fit: cover;
+//.preview {
+//  width: 100vw;
+//  height: 800px;
+//  object-fit: cover;
+//
+//  @include desktop {
+//    max-height: 614px;
+//  }
+//
+//  @include  tablet {
+//    max-height: 414px;
+//  }
+//
+//  @include mobile {
+//    max-height: 212px;
+//  }
+//}
+.img {
+  &__body {
+    background-image: url("../images/preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  @include desktop {
-    max-height: 614px;
+      @include desktop {
+        max-height: 614px;
+      }
+
+      @include  tablet {
+        max-height: 414px;
+      }
+
+      @include mobile {
+        max-height: 212px;
+      }
   }
 
-  @include  tablet {
-    max-height: 414px;
-  }
-
-  @include mobile {
-    max-height: 212px;
+  &__text {
+    text-shadow: #000000 0 0 17px;
   }
 }
 
-.block--yellow {
-  width: 100vw;
-  height: 150px;
-  background-color: var(--color-yellow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include desktop {
-    height: 100px;
-  }
-
-  @include mobile {
-    height: 55px;
-  }
-}
-
-.title {
-  text-align: center;
-  color: var(--color-dark);
-  padding-inline: 22px;
-
-  @include mobile {
-    padding-inline: 10px;
-  }
-}
 .welcome {
   padding-top: 115px;
   display: flex;
