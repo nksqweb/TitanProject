@@ -84,23 +84,6 @@
   }
 }
 
-//.preview {
-//  width: 100vw;
-//  height: 800px;
-//  object-fit: cover;
-//
-//  @include desktop {
-//    max-height: 614px;
-//  }
-//
-//  @include  tablet {
-//    max-height: 414px;
-//  }
-//
-//  @include mobile {
-//    max-height: 212px;
-//  }
-//}
 .img {
   &__body {
     background-image: url("../images/preview.jpg");
@@ -108,7 +91,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 800px;
+    height: 780px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,13 +131,6 @@
 
   @include mobile {
     padding-top: 28px;
-  }
-}
-
-.number,
-.vk-link {
-  @include tablet {
-    display: none;
   }
 }
 

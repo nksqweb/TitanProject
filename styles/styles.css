@@ -420,7 +420,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
+  height: 780px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -464,13 +464,6 @@ a:hover {
 @media (max-width: 767px) {
   .welcome {
     padding-top: 28px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .number,
-  .vk-link {
-    display: none;
   }
 }
 
@@ -831,6 +824,9 @@ body.lock {
 }
 .slider-click .slider-line img {
   height: 385px;
+}
+.slider-click .slider-click img, .slider-click svg {
+  width: 27px;
 }
 @media (max-width: 1280px) {
   .slider-click .slider-click img, .slider-click svg {
@@ -1247,6 +1243,39 @@ a > span {
 }
 .block__info li {
   padding-bottom: 27px;
+}
+
+.history-club {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  color: var(--color-yellow);
+}
+@media (max-width: 1023px) {
+  .history-club {
+    padding-top: 50px;
+  }
+}
+
+.navigation {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 1023px) {
+  .navigation {
+    padding-top: 30px;
+  }
+}
+.navigation p, .navigation a {
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .navigation p, .navigation a {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

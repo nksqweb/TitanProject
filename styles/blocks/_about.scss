@@ -121,6 +121,8 @@
 
 
 .slider-click img, svg {
+  width: 27px;
+
   @include desktop {
     width: 20px;
   }
