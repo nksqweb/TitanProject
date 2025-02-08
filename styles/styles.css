@@ -255,7 +255,7 @@ h2,
 h3 {
   font-weight: 500;
   text-shadow: #000000 0 0 17px;
-  font-size: clamp(12px, 1.8055555556vw, 26px);
+  font-size: clamp(13px, 1.8055555556vw, 26px);
 }
 
 p {
@@ -420,7 +420,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 780px;
+  height: 870px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,6 +467,12 @@ a:hover {
   }
 }
 
+@media (max-width: 1023px) {
+  .number {
+    display: none;
+  }
+}
+
 .logo {
   width: auto;
   height: 112px;
@@ -506,6 +512,16 @@ a:hover {
     max-width: 12px;
     max-height: 16px;
   }
+}
+
+@media (max-width: 1023px) {
+  .tablet--hidden {
+    display: none;
+  }
+}
+
+.competitions {
+  text-decoration: line-through;
 }
 
 body.lock {
@@ -810,7 +826,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .slider-line {
-    max-height: 480px;
+    max-height: 625px;
     max-width: 1155px;
   }
 }
@@ -954,7 +970,7 @@ body.lock {
 }
 @media (max-width: 1023px) {
   .block__quality-list img {
-    width: 77px;
+    width: 65px;
   }
 }
 @media (max-width: 767px) {
@@ -1214,7 +1230,7 @@ a > span {
 
 .dropdown-bottom {
   transition: all 1s;
-  height: 230px;
+  height: 170px;
 }
 
 .show {
