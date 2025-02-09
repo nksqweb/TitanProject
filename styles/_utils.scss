@@ -4,6 +4,10 @@
   padding-inline: var(--container-padding-x);
   overflow: hidden !important;
 
+  @media (max-width: 1840px) {
+    padding-inline: 180px;
+  }
+
   @include desktop {
     padding-inline: 66px !important;
   }
@@ -11,11 +15,6 @@
   @include tablet {
     padding-inline: 40px !important;
   }
-
-  @media (max-width: 1840px) {
-    padding-inline: 200px;
-  }
-
 
   @include mobile {
     padding-inline: 10px !important;
