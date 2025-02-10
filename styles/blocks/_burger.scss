@@ -1,7 +1,6 @@
-body {
-  &.lock {
-    overflow: hidden;
-  }
+body.lock {
+  overflow: hidden;
+  scrollbar-gutter: stable;
 }
 
 .burger {
@@ -129,6 +128,7 @@ body {
 
   .menu__body.active {
     transform: translateY(100%);
+    overflow: auto !important;
   }
 
   .info__block {

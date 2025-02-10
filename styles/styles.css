@@ -119,6 +119,7 @@ html {
     Плавный скролл
    */
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -328,7 +329,7 @@ a:hover {
 
 .header {
   padding-top: 30px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 2000;
@@ -544,6 +545,7 @@ a:hover {
 
 body.lock {
   overflow: hidden;
+  scrollbar-gutter: stable;
 }
 
 .burger {
@@ -671,6 +673,7 @@ body.lock {
 
 .menu__body.active {
   transform: translateY(100%);
+  overflow: auto !important;
 }
 
 .info__block {

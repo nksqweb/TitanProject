@@ -159,9 +159,12 @@ if (menu && menuButton) {
         menu.classList.toggle('active');
         menuButton.classList.toggle('active');
 
-        // Перебираем все элементы `menuClose` и добавляем/убираем класс
         menuClose.forEach(span => {
             span.classList.toggle('active');
         });
     });
 }
+
+menuButton.addEventListener('click', () => {
+    body.classList.toggle('lock');
+});
