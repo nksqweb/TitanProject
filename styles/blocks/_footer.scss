@@ -146,7 +146,7 @@ a > span {
   color: var(--color-yellow);
 }
 .rotate {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
 }
