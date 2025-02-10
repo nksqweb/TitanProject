@@ -336,7 +336,7 @@ a:hover {
 .header--fixed {
   position: fixed !important;
   padding-top: 0 !important;
-  background-color: rgba(20, 21, 20, 0.9);
+  background-color: rgba(20, 21, 20, 0.8);
   transition: all 0.3s ease-in-out !important;
 }
 
@@ -468,13 +468,13 @@ a:hover {
 @media (max-width: 1023px) {
   .img__body {
     max-height: 857px;
-    background-position: left;
+    background-position: center;
   }
 }
 @media (max-width: 767px) {
   .img__body {
     max-height: 857px;
-    background-position: left;
+    background-position: center;
   }
 }
 .img__text {

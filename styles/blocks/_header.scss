@@ -1,7 +1,7 @@
 .header--fixed {
   position: fixed !important;
   padding-top: 0 !important;
-  background-color: rgba(20, 21, 20, .9);
+  background-color: rgba(20, 21, 20, .8);
   transition: all 0.3s ease-in-out !important;
 }
 
@@ -127,12 +127,12 @@
 
       @include  tablet {
         max-height: 857px;
-        background-position: left;
+        background-position: center;
       }
 
       @include mobile {
         max-height: 857px;
-        background-position: left;
+        background-position: center;
       }
   }
 

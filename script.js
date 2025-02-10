@@ -191,7 +191,10 @@ const rotate = document.querySelectorAll('.rotate');
 
 rotate.forEach((element) => {
     const svg = element.querySelector('svg');
-    element.onclick = () => {
-        svg.classList.toggle('rotate');
-    }
+
+    element.addEventListener('click', (event) => {
+        if (!event.target.closest('svg')) {
+            svg.classList.toggle('rotate');
+        }
+    });
 });
