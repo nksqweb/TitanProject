@@ -126,6 +126,7 @@ function getDirection() {
     return direction;
 }
 
+//aos animation
 AOS.init({
     once: true,
     duration: 1500,
@@ -144,6 +145,7 @@ function contacts() {
     document.getElementById("drop-contacts").classList.toggle("show");
 }
 
+//burger close and scroll
 const menu = document.querySelector('.menu__body');
 const menuButton = document.querySelector('.burger');
 const menuClose = document.querySelectorAll('.burger span');
@@ -154,7 +156,6 @@ menuClose.forEach(span => {
     console.log(span);
 });
 
-//burger close and scroll
 if (menu && menuButton) {
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('active');
@@ -185,6 +186,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
-foo.onclick = function(){
-    this.classList.toggle('rotate')
-}
+//footer arrow
+const rotate = document.querySelectorAll('.rotate');
+
+rotate.forEach((element) => {
+    const svg = element.querySelector('svg');
+    element.onclick = () => {
+        svg.classList.toggle('rotate');
+    }
+});

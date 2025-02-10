@@ -118,9 +118,7 @@ a > span {
 
 .button-arrow {
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .footer-mobile {
@@ -146,11 +144,14 @@ a > span {
 
 .button-arrow svg {
   color: var(--color-yellow);
-  transition: transform 0.3s ease-in-out;
 }
-
+.rotate {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 svg {
-  transition: transform 1s ease;
+  transition: transform 0.3s ease;
 }
 svg.rotate {
   transform: rotate(180deg);
