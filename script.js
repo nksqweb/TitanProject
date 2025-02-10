@@ -168,3 +168,6 @@ if (menu && menuButton) {
 menuButton.addEventListener('click', () => {
     body.classList.toggle('lock');
 });
+
+const headerFixed = document.querySelector('.header');
+const offset = 200;
