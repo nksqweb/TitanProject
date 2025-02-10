@@ -1,3 +1,4 @@
+//slider 1
 const sliderLine = document.querySelector('.slider-line');
 const images = document.querySelectorAll('.slider-line img');
 let count = 0;
@@ -83,7 +84,7 @@ cloneSlides();
 
 
 //slider 2
-var swiper = new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
     slidesPerView: 'auto',
     loop: true,
     allowTouchMove: false,
@@ -119,8 +120,8 @@ var swiper = new Swiper(".swiper", {
 });
 
 function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? "horizontal" : "horizontal";
+    let windowWidth = window.innerWidth;
+    let direction = window.innerWidth <= 760 ? "horizontal" : "horizontal";
 
     return direction;
 }
@@ -134,7 +135,7 @@ AOS.init({
     anchorPlacement: 'center-bottom',
 });
 
-
+//footer mobile
 function navigation() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -153,7 +154,7 @@ menuClose.forEach(span => {
     console.log(span);
 });
 
-
+//burger close and scroll
 if (menu && menuButton) {
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('active');
@@ -169,5 +170,17 @@ menuButton.addEventListener('click', () => {
     body.classList.toggle('lock');
 });
 
+//header
 const headerFixed = document.querySelector('.header');
-const offset = 200;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+        headerFixed.classList.add('header--fixed');
+        headerFixed.classList.remove('header--scroll');
+    } else {
+        headerFixed.classList.add('header--scroll');
+        setTimeout(() => {
+            headerFixed.classList.remove('header--fixed');
+        }, 30);
+    }
+});
