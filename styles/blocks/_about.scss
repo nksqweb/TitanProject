@@ -1,5 +1,4 @@
 .about {
-
   &__body {
     @include mobile {
       order: 2;
@@ -13,7 +12,6 @@
   @include mobile {
     padding-top: 48px;
   }
-
 
   display: flex;
   justify-content: space-between;

@@ -184,3 +184,7 @@ window.addEventListener('scroll', () => {
         }, 30);
     }
 });
+
+foo.onclick = function(){
+    this.classList.toggle('rotate')
+}

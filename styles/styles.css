@@ -253,7 +253,9 @@ a, li {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-weight: 500;
   text-shadow: #000000 0 0 17px;
   font-size: clamp(13px, 1.8055555556vw, 26px);
@@ -262,6 +264,10 @@ h3 {
 p {
   font-size: clamp(13px, 1.5277777778vw, 22px);
   font-weight: 300;
+}
+
+b {
+  font-weight: 500;
 }
 
 button > a, button {
@@ -357,7 +363,7 @@ a:hover {
 }
 @media (max-width: 767px) {
   .header {
-    padding-top: 5px;
+    padding-top: 10px;
   }
 }
 .header__inner {
@@ -560,7 +566,7 @@ body.lock {
 }
 
 .burger {
-  width: 47px;
+  width: 44px;
   height: 28px;
   display: flex;
   flex-direction: column;
@@ -606,7 +612,7 @@ body.lock {
   background-color: var(--color-yellow);
 }
 .burger span:nth-child(3) {
-  width: 25px;
+  width: 22px;
   margin-left: auto;
 }
 @media (max-width: 767px) {
@@ -1116,14 +1122,13 @@ body.lock {
   background-size: 100% auto;
   background-position: center;
 }
+.swiper-button-prev::after {
+  display: none;
+}
 @media (max-width: 767px) {
   .swiper-button-prev {
     width: 20px !important;
   }
-}
-
-.swiper-button-prev::after {
-  display: none;
 }
 
 @media (max-width: 1280px) {
@@ -1258,10 +1263,10 @@ a > span {
   display: none;
   height: 166px;
   padding-top: 20px;
+  transition: max-height 0.3s ease-in-out; /* Делаем плавное выкатывание */
 }
 
 .dropdown-bottom {
-  transition: all 1s;
   height: 170px;
 }
 
@@ -1272,6 +1277,7 @@ a > span {
 .button-arrow {
   font-weight: 500;
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
@@ -1282,7 +1288,7 @@ a > span {
   .footer-mobile {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
   }
 }
 
@@ -1290,7 +1296,20 @@ a > span {
   padding: 0;
 }
 .block__info li {
-  padding-bottom: 27px;
+  padding-bottom: 25px;
+}
+
+.button-arrow svg {
+  color: var(--color-yellow);
+  transition: transform 0.3s ease-in-out;
+}
+
+svg {
+  transition: transform 1s ease;
+}
+
+svg.rotate {
+  transform: rotate(180deg);
 }
 
 .history-club {
@@ -1299,11 +1318,6 @@ a > span {
   justify-content: center;
   padding-top: 100px;
   color: var(--color-yellow);
-}
-@media (max-width: 1023px) {
-  .history-club {
-    padding-top: 50px;
-  }
 }
 
 .navigation {
@@ -1317,6 +1331,9 @@ a > span {
     padding-top: 30px;
   }
 }
+.navigation p {
+  color: var(--color-yellow);
+}
 .navigation p, .navigation a {
   font-weight: 400;
 }
@@ -1324,6 +1341,10 @@ a > span {
   .navigation p, .navigation a {
     font-size: 10px;
   }
+}
+
+.about p {
+  line-height: 1.3em; /* Задайте и наслаждайтесь единообразием */
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -108,9 +108,9 @@ a > span {
   display: none;
   height: 166px;
   padding-top: 20px;
+  transition: max-height 0.3s ease-in-out; /* Делаем плавное выкатывание */
 }
 .dropdown-bottom {
-  transition: all 1s;
   height: 170px;
 }
 
@@ -119,6 +119,7 @@ a > span {
 .button-arrow {
   font-weight: 500;
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
@@ -128,7 +129,7 @@ a > span {
   @include mobile {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
   }
 }
 
@@ -139,6 +140,18 @@ a > span {
   }
 
   & li {
-    padding-bottom: 27px;
+    padding-bottom: 25px;
   }
+}
+
+.button-arrow svg {
+  color: var(--color-yellow);
+  transition: transform 0.3s ease-in-out;
+}
+
+svg {
+  transition: transform 1s ease;
+}
+svg.rotate {
+  transform: rotate(180deg);
 }

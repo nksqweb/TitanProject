@@ -4,7 +4,7 @@ body.lock {
 }
 
 .burger {
-  width: 47px;
+  width: 44px;
   height: 28px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ body.lock {
     }
 
     &:nth-child(3) {
-      width: 25px;
+      width: 22px;
       margin-left: auto;
 
       @include mobile {
