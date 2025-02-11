@@ -12,6 +12,16 @@ body.lock {
   position: relative;
   z-index: 5;
 
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+  }
+
   &.active {
     height: auto;
   }
@@ -135,6 +145,7 @@ body.lock {
     gap: 50px;
     font-size: 18px;
     font-weight: 400;
+    text-decoration: none;
 
     @include desktop {
       font-size: 16px;

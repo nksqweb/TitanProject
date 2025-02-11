@@ -37,7 +37,7 @@ footer {
 .contacts-list, {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 20px;
 }
 
 .info__text ul {
@@ -106,7 +106,7 @@ a > span {
 
 .dropdown-content {
   display: none;
-  height: 166px;
+  height: 140px;
   padding-top: 20px;
   transition: max-height 0.3s ease-in-out; /* Делаем плавное выкатывание */
 }
@@ -127,7 +127,7 @@ a > span {
   @include mobile {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
   }
 }
 
@@ -138,7 +138,8 @@ a > span {
   }
 
   & li {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+    text-decoration: none;
   }
 }
 
@@ -150,9 +151,15 @@ a > span {
   align-items: center;
   gap: 12px;
 }
+
 svg {
   transition: transform 0.3s ease;
 }
+
 svg.rotate {
   transform: rotate(180deg);
+}
+
+.gap--small {
+  gap: 5px;
 }

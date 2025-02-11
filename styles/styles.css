@@ -245,6 +245,7 @@ body {
 }
 
 a, li {
+  line-height: 1.3em;
   text-decoration: none;
   color: inherit;
   font-weight: 500;
@@ -256,21 +257,25 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  line-height: 1.3em;
+  font-weight: bold;
   text-shadow: #000000 0 0 17px;
   font-size: clamp(13px, 1.8055555556vw, 26px);
 }
 
 p {
+  line-height: 1.3em;
   font-size: clamp(13px, 1.5277777778vw, 22px);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 b {
+  line-height: 1.3em;
   font-weight: 500;
 }
 
 button > a, button {
+  line-height: 1.3em;
   font-weight: 500;
   font-size: clamp(13px, 1.6666666667vw, 24px);
 }
@@ -574,6 +579,15 @@ body.lock {
   position: relative;
   z-index: 5;
 }
+.burger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+}
 .burger.active {
   height: auto;
 }
@@ -697,6 +711,7 @@ body.lock {
   gap: 50px;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
 }
 @media (max-width: 1280px) {
   .info__block {
@@ -1189,7 +1204,7 @@ footer {
 .contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 20px;
 }
 
 .info__text ul {
@@ -1260,7 +1275,7 @@ a > span {
 
 .dropdown-content {
   display: none;
-  height: 166px;
+  height: 140px;
   padding-top: 20px;
   transition: max-height 0.3s ease-in-out; /* Делаем плавное выкатывание */
 }
@@ -1285,7 +1300,7 @@ a > span {
   .footer-mobile {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
   }
 }
 
@@ -1293,7 +1308,8 @@ a > span {
   padding: 0;
 }
 .block__info li {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 .button-arrow svg {
@@ -1312,6 +1328,10 @@ svg {
 
 svg.rotate {
   transform: rotate(180deg);
+}
+
+.gap--small {
+  gap: 5px;
 }
 
 .history-club {
@@ -1343,10 +1363,6 @@ svg.rotate {
   .navigation p, .navigation a {
     font-size: 10px;
   }
-}
-
-.about p {
-  line-height: 1.3em; /* Задайте и наслаждайтесь единообразием */
 }
 
 /*# sourceMappingURL=styles.css.map */
