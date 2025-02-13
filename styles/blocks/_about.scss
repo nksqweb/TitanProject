@@ -88,7 +88,7 @@
   }
 
   @include mobile {
-    max-width: 385px;
+    max-width: 385px !important;
   }
 }
 
@@ -100,9 +100,10 @@
     max-width: 915px;
     max-height: 342px;
   }
+
   @include mobile {
     max-height: 625px;
-    max-width: 1155px;
+    max-width: 100%;
   }
 }
 
@@ -112,11 +113,6 @@
   margin-top: 22px;
   margin-right: auto;
   color: #9A9797;
-
-  .slider-line img {
-    height: 385px;
-  }
-
 
 .slider-click img, svg {
   width: 27px;

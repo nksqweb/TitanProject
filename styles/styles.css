@@ -857,7 +857,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .slider {
-    max-width: 385px;
+    max-width: 385px !important;
   }
 }
 
@@ -874,7 +874,7 @@ body.lock {
 @media (max-width: 767px) {
   .slider-line {
     max-height: 625px;
-    max-width: 1155px;
+    max-width: 100%;
   }
 }
 
@@ -884,9 +884,6 @@ body.lock {
   margin-top: 22px;
   margin-right: auto;
   color: #9A9797;
-}
-.slider-click .slider-line img {
-  height: 385px;
 }
 .slider-click .slider-click img, .slider-click svg {
   width: 27px;
@@ -1009,7 +1006,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .block__quality {
-    gap: 45px;
+    gap: 42px;
   }
 }
 .block__quality-list img {
@@ -1181,8 +1178,8 @@ footer {
 @media (max-width: 767px) {
   footer {
     padding-inline: 15px !important;
-    padding-top: 120px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 }
 
