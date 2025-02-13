@@ -55,11 +55,13 @@ rotate.forEach((element) => {
     const svg = element.querySelector('svg');
 
     element.addEventListener('click', (event) => {
-        if (!event.target.closest('svg')) {
+        if (!svg.contains(event.target)) {
             svg.classList.toggle('rotate');
         }
     });
 });
+
+
 
 //fix modal scroll
 const b = document.querySelector("html");
