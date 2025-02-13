@@ -52,16 +52,14 @@ window.addEventListener('scroll', () => {
 const rotate = document.querySelectorAll('.rotate');
 
 rotate.forEach((element) => {
-    const svg = element.querySelector('svg');
+    const svg = element.querySelector('svg, path');
 
     element.addEventListener('click', (event) => {
-        if (!svg.contains(event.target)) {
+        if (!event.target.closest('svg, path')) {
             svg.classList.toggle('rotate');
         }
     });
 });
-
-
 
 //fix modal scroll
 const b = document.querySelector("html");
