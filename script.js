@@ -52,10 +52,10 @@ window.addEventListener('scroll', () => {
 const rotate = document.querySelectorAll('.rotate');
 
 rotate.forEach((element) => {
-    const svg = element.querySelector('svg');
+    const svg = element.querySelector('path');
 
     element.addEventListener('click', (event) => {
-        if (!event.target.closest('svg')) {
+        if (!event.target.closest('path')) {
             svg.classList.toggle('rotate');
         }
     });
@@ -87,28 +87,3 @@ competitions.forEach((e => {
         alert('В данный момент ссылка недоступна.');
     })
 }));
-
-
-// Проверка сенсорного экрана
-function isTouchDeviceCheck() {
-    let prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
-    let mq = function(query) {
-        return window.matchMedia(query).matches;
-    }
-
-    if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
-        return true;
-    }
-
-    // include the 'heartz' as a way to have a non matching MQ to help terminate the join
-    // https://git.io/vznFH
-    let query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
-    return mq(query);
-}
-
-// Добавляем класс к body в зависимости от типа экрана
-if (isTouchDeviceCheck()) {
-    document.body.classList.add("touch-device");
-} else {
-    document.body.classList.add("pointer-device");
-}
