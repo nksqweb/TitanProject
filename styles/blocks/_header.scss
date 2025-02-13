@@ -1,12 +1,6 @@
 .header--fixed {
-  position: fixed !important;
   padding-top: 0 !important;
   background-color: rgba(20, 21, 20, .8);
-  transition: all 0.3s ease-in-out !important;
-}
-
-.header--scroll {
-  transition: all 0.3s ease-in-out !important;
 }
 
 .header {

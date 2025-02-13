@@ -279,14 +279,31 @@ button > a, button {
   border-bottom: 3px solid transparent;
   color: var(--color-white);
 }
+@media (max-width: 1023px) {
+  .button--hover button:active {
+    border-bottom: 3px solid transparent;
+    color: var(--color-white);
+  }
+}
 
 .button--hover:hover {
   border: 3px solid var(--color-white);
   color: var(--color-yellow);
 }
+@media (max-width: 1023px) {
+  .button--hover:hover button:active {
+    border: 3px solid var(--color-white);
+    color: var(--color-yellow);
+  }
+}
 
 a:hover {
   color: var(--color-yellow);
+}
+@media (max-width: 1023px) {
+  a:hover button:active {
+    color: var(--color-yellow);
+  }
 }
 
 .contacts-list a:hover {
@@ -334,14 +351,8 @@ a:hover {
 }
 
 .header--fixed {
-  position: fixed !important;
   padding-top: 0 !important;
   background-color: rgba(20, 21, 20, 0.8);
-  transition: all 0.3s ease-in-out !important;
-}
-
-.header--scroll {
-  transition: all 0.3s ease-in-out !important;
 }
 
 .header {

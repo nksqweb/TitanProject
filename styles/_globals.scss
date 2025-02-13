@@ -65,15 +65,35 @@ button > a, button {
 .button--hover {
   border-bottom: 3px solid transparent;
   color: var(--color-white);
+
+  @include tablet {
+    button:active {
+      border-bottom: 3px solid transparent;
+      color: var(--color-white);
+    }
+  }
 }
 
 .button--hover:hover {
   border: 3px solid var(--color-white);
   color: var(--color-yellow);
+
+  @include tablet {
+    button:active {
+      border: 3px solid var(--color-white);
+      color: var(--color-yellow);
+    }
+  }
 }
 
 a:hover {
   color: var(--color-yellow);
+
+  @include tablet {
+    button:active {
+      color: var(--color-yellow);
+    }
+  }
 }
 
 .contacts-list a:hover {
