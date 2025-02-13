@@ -5,17 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>titantaishet</title>
+    <title>titansportclub</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 <header data-aos="fade-down" class="header">
     <div class="header__inner container">
-        <a href="./index.html" class="home">
-            <img src="./images/titan_logo_chb%20(3).svg" alt="" class="logo">
+        <a href="" class="home">
+            <img src="./images/titan-logo.svg" alt="" class="logo">
         </a>
         <div class="header__list">
-            <a href="#" class="header__map">
+            <a target="_blank" href="https://yandex.ru/maps/-/CHqERR3x" class="header__map">
                 <svg class="map" width="26" height="34" viewBox="0 0 26 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.556 12.778C25.556 5.7 19.856 0 12.778 0C5.7 0 0 5.7 0 12.778C0 19.856 12.778 33.0725 12.778 33.0725C12.778 33.0725 25.556 19.856 25.556 12.778ZM6.82747 12.5275C6.82747 9.27033 9.52088 6.57692 12.778 6.57692C16.0352 6.57692 18.7286 9.20769 18.7286 12.5275C18.7286 15.7846 16.0978 18.478 12.778 18.478C9.52088 18.478 6.82747 15.7846 6.82747 12.5275Z" fill="#9A9797"/>
                 </svg>
@@ -47,7 +47,7 @@
                         <ul class="menu__list-item">
                             <li class="item__link">
                                 <a href="./index.html" class="link">Главная</a>
-                                <a href="#" class="link">Достижения</a>
+                                <a href="./achievements.html" class="link">Достижения</a>
                                 <a href="#" class="link competitions">Соревнования</a>
                                 <a href="./about.html" class="link">История Клуба</a>
                             </li>
@@ -122,9 +122,9 @@
     <div class="footer__navigation">
         <div class="footer__flex">
             <div class="navigation__block"  data-aos="fade-right">
-                <h4 class="title--gap">
+                <h3 class="title--gap">
                     НАВИГАЦИЯ
-                </h4>
+                </h3>
                 <ul class="navigation-list">
                     <li>
                         <a href="./index.html">Главная</a>
@@ -133,7 +133,7 @@
                         <a href="#">Достижения</a>
                     </li>
                     <li>
-                        <a href="#">Соревнования</a>
+                        <a class="competitions" href="#">Соревнования</a>
                     </li>
                     <li>
                         <a href="./about.html">История клуба</a>
@@ -142,8 +142,8 @@
             </div>
 
             <div class="contacts__block"  data-aos="fade-right">
-                <h5 class="title--gap">
-                    КОНТАКТЫ</h5>
+                <h3 class="title--gap">
+                    КОНТАКТЫ</h3>
                 <ul class="contacts-list">
                     <li>
                         <a href="tel:+79500790309" >Телефон:<br>
@@ -164,7 +164,7 @@
             <div class="info__block-footer"  data-aos="fade-left">
                 <div class="block-links">
                     <a href="./index.html">
-                        <img class="logo" src="./images/titan_logo_chb%20(3).svg" alt="">
+                        <img class="logo" src="./images/titan-logo.svg" alt="">
                     </a>
                 </div>
                 <div class="info__text">
@@ -182,8 +182,19 @@
 <footer class="footer-mobile">
     <div class="dropdown" data-aos="fade-right">
         <div class="button-arrow">
-            <button onclick="navigation()" class="drop-button">НАВИГАЦИЯ</button>
-            <img src="./images/mobile-button.svg" alt="">
+            <div class="rotate">
+                <button onclick="navigation()" class="drop-button">НАВИГАЦИЯ</button>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2457_6)">
+                        <path d="M1.5 2.30005L6 6.90005L10.6 2.30005L12 3.70005L6 9.70005L6.5406e-07 3.70005L1.5 2.30005Z" fill="#9A9797"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2457_6">
+                            <rect width="12" height="12" fill="white" transform="translate(12) rotate(90)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
         </div>
         <div id="myDropdown" class="dropdown-content">
             <ul class="navigation-list">
@@ -194,7 +205,7 @@
                     <a href="#">Достижения</a>
                 </li>
                 <li>
-                    <a href="#">Соревнования</a>
+                    <a class="competitions" href="#">Соревнования</a>
                 </li>
                 <li>
                     <a href="./about.html">История клуба</a>
@@ -205,8 +216,19 @@
 
     <div class="dropdown" data-aos="fade-right">
         <div class="button-arrow">
-            <button onclick="contacts()" class="drop-button">КОНТАКТЫ</button>
-            <img src="./images/mobile-button.svg" alt="">
+            <div class="rotate">
+                <button onclick="contacts()" class="drop-button">КОНТАКТЫ</button>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2457_6)">
+                        <path d="M1.5 2.30005L6 6.90005L10.6 2.30005L12 3.70005L6 9.70005L6.5406e-07 3.70005L1.5 2.30005Z" fill="#9A9797"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2457_6">
+                            <rect width="12" height="12" fill="white" transform="translate(12) rotate(90)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
         </div>
         <div id="drop-contacts" class="dropdown-content dropdown-bottom">
             <ul class="contacts-list">
@@ -214,12 +236,10 @@
                     <a href="tel:+79500790309">Телефон:<br>
                         <span>+7 (950) 079-03-09</span></a>
                 </li>
-
                 <li>
                     <a href="#">Часы работы:<br>
                         <span>Ежедневно, 9:00–21:00</span></a>
                 </li>
-
                 <li>
                     <a target="_blank" href="https://yandex.ru/maps/-/CHqERR3x">Адрес зала:<br>
                         <span>г. Тайшет, мкр. Новый 20/1,<br>
@@ -229,16 +249,16 @@
         </div>
     </div>
 
-    <div class="info__block" data-aos="fade-right">
+    <div class="info__block gap--small" data-aos="fade-right">
         <div class="block-links">
             <a href="./index.html">
-                <img class="logo" src="./images/titan_logo_chb%20(3).svg" alt="">
+                <img class="logo" src="./images/titan-logo.svg" alt="">
             </a>
         </div>
         <div class="block__info">
             <ul>
                 <li>© Титан, 2025</li>
-                <li>Разработка сайта: <br/>
+                <li>Разработка сайта: <br>
                     kogannsweb@gmail.com</li>
             </ul>
         </div>

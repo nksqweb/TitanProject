@@ -216,3 +216,12 @@ c.addEventListener("click", () => {
         m.style.paddingRight = scrollBarWidth + "px";
     }
 });
+
+// отменяет переход по в кладке "Соревнования"
+const competitions = document.querySelectorAll('.competitions');
+competitions.forEach((e => {
+    e.addEventListener('click', (event) => {
+        event.preventDefault(); // Отменяет переход по ссылке
+        alert('В данный момент ссылка недоступна.');
+    })
+}));
