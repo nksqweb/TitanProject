@@ -1,0 +1,46 @@
+.body {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include desktop {
+    padding-top: 120px;
+  }
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__list__item {
+    width: 100%;
+  }
+}
+
+.display--none {
+  visibility: hidden;
+
+  @include tablet {
+    display: none;
+  }
+}

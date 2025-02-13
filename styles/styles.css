@@ -118,8 +118,7 @@ html {
   /**
     Плавный скролл
    */
-  scroll-behavior: smooth;
-  scrollbar-gutter: stable;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -212,10 +211,6 @@ ul, li {
   font-style: normal;
   font-display: swap;
 }
-html {
-  scroll-behavior: smooth !important;
-}
-
 /* Общие настройки скроллбара */
 ::-webkit-scrollbar {
   width: 4px; /* Узкий вертикальный скроллбар */
@@ -1338,8 +1333,23 @@ svg.rotate {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 250px;
   color: var(--color-yellow);
+}
+@media (max-width: 1280px) {
+  .history-club {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 1023px) {
+  .history-club {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .history-club {
+    padding-top: 100px;
+  }
 }
 
 .navigation {
@@ -1362,6 +1372,57 @@ svg.rotate {
 @media (max-width: 767px) {
   .navigation p, .navigation a {
     font-size: 10px;
+  }
+}
+
+.body {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .body {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 1023px) {
+  .body {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .body {
+    padding-top: 40px;
+  }
+}
+.body__list {
+  display: grid;
+  gap: 50px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1023px) {
+  .body__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .body__list {
+    grid-template-columns: 1fr;
+  }
+}
+.body__list__item {
+  width: 100%;
+}
+
+.display--none {
+  visibility: hidden;
+}
+@media (max-width: 1023px) {
+  .display--none {
+    display: none;
   }
 }
 

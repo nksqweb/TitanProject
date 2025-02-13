@@ -198,3 +198,21 @@ rotate.forEach((element) => {
         }
     });
 });
+
+//fix modal scroll
+const b = document.querySelector("html");
+const m = document.querySelector("header");
+const c = document.querySelector(".burger");
+
+c.addEventListener("click", () => {
+    let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    if (b.hasAttribute("style")) {
+        b.removeAttribute("style");
+        m.removeAttribute("style");
+    } else {
+        b.style.overflow = "hidden";
+        b.style.paddingRight = scrollBarWidth + "px";
+        m.style.paddingRight = scrollBarWidth + "px";
+    }
+});
