@@ -52,10 +52,10 @@ window.addEventListener('scroll', () => {
 const rotate = document.querySelectorAll('.rotate');
 
 rotate.forEach((element) => {
-    const svg = element.querySelector('path');
+    const svg = element.querySelector('svg');
 
     element.addEventListener('click', (event) => {
-        if (!event.target.closest('path')) {
+        if (!event.target.closest('svg')) {
             svg.classList.toggle('rotate');
         }
     });
