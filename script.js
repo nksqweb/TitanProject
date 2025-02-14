@@ -49,33 +49,29 @@ window.addEventListener('scroll', () => {
 });
 
 //footer arrow
-const rotate = document.querySelectorAll('.rotate');
-
-rotate.forEach((element) => {
-    const svg = element.querySelector('svg, path');
-
-    element.addEventListener('click', (event) => {
-        if (!event.target.closest('svg, path')) {
-            svg.classList.toggle('rotate');
-        }
+document.querySelectorAll('.rotate').forEach((item) => {
+    item.querySelector('.drop-button').addEventListener('click', () => {
+        item.classList.toggle('open');
     });
 });
 
+
 //fix modal scroll
-const b = document.querySelector("html");
-const m = document.querySelector("header");
-const c = document.querySelector(".burger");
+const html = document.querySelector("html");
+const header = document.querySelector("header");
+const burger = document.querySelector(".burger");
+
 let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-c.addEventListener("click", () => {
+burger.addEventListener("click", () => {
 
 
-    if (b.hasAttribute("style")) {
-        b.removeAttribute("style");
-        m.removeAttribute("style");
+    if (html.hasAttribute("style")) {
+        html.removeAttribute("style");
+        header.removeAttribute("style");
     } else {
-        b.style.overflow = "hidden";
-        b.style.paddingRight = scrollBarWidth + "px";
-        m.style.paddingRight = scrollBarWidth + "px";
+        html.style.overflow = "hidden";
+        html.style.paddingRight = scrollBarWidth + "px";
+        header.style.paddingRight = scrollBarWidth + "px";
     }
 });
 

@@ -1329,12 +1329,34 @@ svg {
   transition: transform 0.3s ease;
 }
 
-svg.rotate {
+svg.arrow-rotate {
   transform: rotate(180deg);
+  pointer-events: none;
 }
 
 .gap--small {
   gap: 5px;
+}
+
+.rotate {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M1.5 2.3L6 6.9L10.6 2.3L12 3.7L6 9.7L0 3.7L1.5 2.3Z" fill="%23FFEA00"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.open .arrow {
+  transform: rotate(180deg);
 }
 
 .history-club {
