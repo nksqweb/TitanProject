@@ -197,6 +197,16 @@ body.lock {
       padding-left: 80px;
       gap: 30px;
     }
+
+    @include tablet {
+      padding-left: 153px;
+      gap: 30px;
+    }
+
+    @include mobile {
+      padding-left: 53px;
+      gap: 35px;
+    }
   }
 
   .opacity {

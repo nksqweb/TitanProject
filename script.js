@@ -1,3 +1,13 @@
+//aos animation
+AOS.init({
+    once: true,
+    duration: 1500,
+    delay: 50,
+    offset:150,
+    mirror: false,
+    anchorPlacement: 'center-bottom',
+});
+
 //footer mobile
 function navigation() {
     document.getElementById("myDropdown").classList.toggle("show");
