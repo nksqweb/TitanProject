@@ -26,6 +26,10 @@ body {
   overflow-x: hidden !important;
 }
 
+.about__click {
+  @include fluid-text(24, 12);
+}
+
 a, li {
   line-height: 1.3em;
   text-decoration: none;

@@ -239,6 +239,10 @@ body {
   overflow-x: hidden !important;
 }
 
+.about__click {
+  font-size: clamp(12px, 1.6666666667vw, 24px);
+}
+
 a, li {
   line-height: 1.3em;
   text-decoration: none;
