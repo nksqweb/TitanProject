@@ -1,6 +1,16 @@
 .header--fixed {
   padding-top: 0 !important;
   background-color: rgba(20, 21, 20, .8);
+
+  @include tablet {
+    transition: all 0.3s ease-in !important;
+  }
+}
+
+.header--scroll {
+  @include tablet {
+    transition: all 0.3s ease-in !important;
+  }
 }
 
 .header {

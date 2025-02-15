@@ -80,6 +80,6 @@ const competitions = document.querySelectorAll('.competitions');
 competitions.forEach((e => {
     e.addEventListener('click', (event) => {
         event.preventDefault(); // Отменяет переход по ссылке
-        alert('В данный момент ссылка недоступна.');
+        alert('В данный момент страница недоступна.');
     })
 }));

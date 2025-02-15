@@ -354,6 +354,17 @@ a:hover {
   padding-top: 0 !important;
   background-color: rgba(20, 21, 20, 0.8);
 }
+@media (max-width: 1023px) {
+  .header--fixed {
+    transition: all 0.3s ease-in !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header--scroll {
+    transition: all 0.3s ease-in !important;
+  }
+}
 
 .header {
   padding-top: 30px;
@@ -737,6 +748,9 @@ body.lock {
     font-size: 12px;
     gap: 20px;
   }
+}
+.info__block a {
+  font-weight: 400;
 }
 
 .menu__info {
