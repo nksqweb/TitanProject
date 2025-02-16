@@ -91,5 +91,5 @@ competitions.forEach((e => {
     e.addEventListener('click', (event) => {
         event.preventDefault(); // Отменяет переход по ссылке
         alert('В данный момент страница недоступна.');
-    })
+    });
 }));
