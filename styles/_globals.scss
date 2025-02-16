@@ -43,25 +43,25 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-weight: bold;
   text-shadow: #000000 0 0 17px;
   @include fluid-text(26, 13)
 }
 
 p {
-  line-height: 1.3em;
+  line-height: 1.4em;
   @include fluid-text(22, 13);
   font-weight: 400;
 }
 
 b {
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-weight: 500;
 }
 
 button > a, button {
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-weight: 500;
   @include fluid-text(24, 13);
 }
@@ -110,7 +110,7 @@ a:hover {
 
 [data-aos] {
   transform-origin: center center;
-  max-width: 100%; /* Ограничение ширины */
+  max-width: 100%;
 }
 
 [data-aos] {

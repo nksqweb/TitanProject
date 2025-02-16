@@ -41,3 +41,10 @@
     }
   }
 }
+
+.footer-mobile-link {
+
+  @include mobile {
+    padding-top: 40px;
+  }
+}
