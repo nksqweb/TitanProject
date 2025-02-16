@@ -1,60 +1,47 @@
 //slider 1
 const sliderLine = document.querySelector('.slider-line');
-const images = document.querySelectorAll('.slider-line img');
+let images = document.querySelectorAll('.slider-line img');
 let count = 0;
 let width;
 let autoScroll;
 
 function cloneSlides() {
-    const firstClone = sliderLine.firstElementChild.cloneNode(true);
-    const lastClone = sliderLine.lastElementChild.cloneNode(true);
+    const firstClone = images[0].cloneNode(true);
+    const lastClone = images[images.length - 1].cloneNode(true);
     sliderLine.appendChild(firstClone);
     sliderLine.insertBefore(lastClone, sliderLine.firstChild);
+
+    images = document.querySelectorAll('.slider-line img'); // Обновляем список
 }
 
 function init() {
     console.log('resize');
     width = document.querySelector('.slider').offsetWidth;
-    sliderLine.style.transition = 'none'; // Убираем анимацию на время настройки
-    sliderLine.style.width = width * (images.length + 2) + 'px'; // +2 из-за клонов
-    sliderLine.style.transform = `translateX(${-width * (count + 1)}px)`; // Сдвигаем на первый слайд
+    sliderLine.style.transition = 'none';
+    sliderLine.style.width = width * images.length + 'px';
+    sliderLine.style.transform = `translateX(${-width}px)`;
 
-    const slides = document.querySelectorAll('.slider-line');
-    slides.forEach(item => {
-        item.style.width = width + 'px';
-        item.style.height = 'auto';
+    images.forEach(img => {
+        img.style.width = width + 'px';
+        img.style.height = 'auto';
     });
 
     rollSlider();
 }
 
-window.addEventListener('resize', init);
-init();
-
-document.querySelector('.slider-back').addEventListener('click', () => {
-    stopAutoScroll();
-    count--;
-    rollSlider();
-    restartAutoScroll();
-});
-
-document.querySelector('.slider-next').addEventListener('click', () => {
-    stopAutoScroll();
-    count++;
-    rollSlider();
-    restartAutoScroll();
-});
-
 function rollSlider() {
+    console.log(count, width);
+    if (!width) return;
+
     sliderLine.style.transition = 'transform 0.5s ease-in-out';
     sliderLine.style.transform = `translateX(${-count * width}px)`;
 
     sliderLine.addEventListener('transitionend', () => {
         if (count < 0) {
-            count = images.length - 1;
+            count = images.length - 2;
             sliderLine.style.transition = 'none';
             sliderLine.style.transform = `translateX(${-count * width}px)`;
-        } else if (count >= images.length) {
+        } else if (count >= images.length - 1) {
             count = 0;
             sliderLine.style.transition = 'none';
             sliderLine.style.transform = `translateX(${-count * width}px)`;
@@ -78,9 +65,25 @@ function restartAutoScroll() {
     startAutoScroll();
 }
 
-startAutoScroll();
+document.querySelector('.slider-back').addEventListener('click', () => {
+    stopAutoScroll();
+    count--;
+    rollSlider();
+    restartAutoScroll();
+});
+
+document.querySelector('.slider-next').addEventListener('click', () => {
+    stopAutoScroll();
+    count++;
+    rollSlider();
+    restartAutoScroll();
+});
 
 cloneSlides();
+init();
+window.addEventListener('resize', init);
+startAutoScroll();
+
 
 
 //slider 2

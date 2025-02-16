@@ -898,7 +898,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .slider {
-    max-width: 385px !important;
+    max-width: 100% !important;
   }
 }
 
