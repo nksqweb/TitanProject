@@ -7,7 +7,7 @@ let autoScroll;
 
 function cloneSlides() {
     const firstClone = images[0].cloneNode(true);
-    const lastClone = images[images.length - 1].cloneNode(true);
+    const lastClone = images[images.length - 5].cloneNode(true);
     sliderLine.appendChild(firstClone);
     sliderLine.insertBefore(lastClone, sliderLine.firstChild);
 
