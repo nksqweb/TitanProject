@@ -28,7 +28,7 @@
 
     @include tablet {
       grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      gap: 20px;
     }
 
     @include mobile {
@@ -37,6 +37,10 @@
 
     & img {
       box-shadow: 0 0 11px 2px rgba(255, 255, 255, 0.7);
+
+      @include tablet {
+        margin-bottom: 13px;
+      }
     }
   }
 
