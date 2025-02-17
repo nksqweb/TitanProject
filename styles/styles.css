@@ -354,6 +354,127 @@ a:hover {
   }
 }
 
+.history-club {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+  color: var(--color-yellow);
+}
+@media (max-width: 1280px) {
+  .history-club {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 1023px) {
+  .history-club {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .history-club {
+    padding-top: 100px;
+  }
+}
+
+.navigation {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 1023px) {
+  .navigation {
+    padding-top: 30px;
+  }
+}
+.navigation p {
+  color: var(--color-yellow);
+}
+.navigation p, .navigation a {
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .navigation p, .navigation a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-mobile-link {
+    padding-top: 40px;
+  }
+}
+
+.body {
+  padding-inline: 100px;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .body {
+    padding-top: 120px;
+    padding-inline: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .body {
+    padding-top: 80px;
+    padding-inline: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .body {
+    padding-top: 40px;
+    padding-inline: 0;
+  }
+}
+.body__list {
+  display: grid;
+  gap: 50px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1023px) {
+  .body__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .body__list {
+    grid-template-columns: 1fr;
+  }
+}
+.body__list img {
+  box-shadow: 0 0 11px 2px rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 1023px) {
+  .body__list img {
+    margin-bottom: 13px;
+  }
+}
+.body__list__item {
+  width: 100%;
+}
+
+.display--none {
+  visibility: hidden;
+}
+@media (max-width: 1023px) {
+  .display--none {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-mobile-link {
+    padding-top: 40px;
+  }
+}
+
 .header--fixed {
   padding-top: 0 !important;
   background-color: rgba(20, 21, 20, 0.8);
@@ -1384,127 +1505,6 @@ svg.arrow-rotate {
 
 .open .arrow {
   transform: rotate(180deg);
-}
-
-.history-club {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 250px;
-  color: var(--color-yellow);
-}
-@media (max-width: 1280px) {
-  .history-club {
-    padding-top: 200px;
-  }
-}
-@media (max-width: 1023px) {
-  .history-club {
-    padding-top: 150px;
-  }
-}
-@media (max-width: 767px) {
-  .history-club {
-    padding-top: 100px;
-  }
-}
-
-.navigation {
-  padding-top: 80px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-@media (max-width: 1023px) {
-  .navigation {
-    padding-top: 30px;
-  }
-}
-.navigation p {
-  color: var(--color-yellow);
-}
-.navigation p, .navigation a {
-  font-weight: 400;
-}
-@media (max-width: 767px) {
-  .navigation p, .navigation a {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-mobile-link {
-    padding-top: 40px;
-  }
-}
-
-.body {
-  padding-inline: 100px;
-  padding-top: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 1280px) {
-  .body {
-    padding-top: 120px;
-    padding-inline: 50px;
-  }
-}
-@media (max-width: 1023px) {
-  .body {
-    padding-top: 80px;
-    padding-inline: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .body {
-    padding-top: 40px;
-    padding-inline: 0;
-  }
-}
-.body__list {
-  display: grid;
-  gap: 50px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-@media (max-width: 1023px) {
-  .body__list {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .body__list {
-    grid-template-columns: 1fr;
-  }
-}
-.body__list img {
-  box-shadow: 0 0 11px 2px rgba(255, 255, 255, 0.7);
-}
-@media (max-width: 1023px) {
-  .body__list img {
-    margin-bottom: 13px;
-  }
-}
-.body__list__item {
-  width: 100%;
-}
-
-.display--none {
-  visibility: hidden;
-}
-@media (max-width: 1023px) {
-  .display--none {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-mobile-link {
-    padding-top: 40px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

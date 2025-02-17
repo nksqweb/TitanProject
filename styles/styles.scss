@@ -9,6 +9,10 @@
 "utils";
 
 @import
+"links/abouthtml",
+"links/achievements";
+
+@import
 "blocks/header",
 "blocks/burger",
 "blocks/about",
@@ -16,6 +20,3 @@
 "blocks/mentor",
 'blocks/footer';
 
-@import
-"links/abouthtml",
-"links/achievements";
