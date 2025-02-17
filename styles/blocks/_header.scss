@@ -173,28 +173,24 @@
 .logo {
 
   width: auto;
-  height: 112px;
+  height: 80px;
   background-color: transparent;
 
   @include desktop {
-    height: 100px;
+    height: 65px;
     width: auto;
   }
 
   @include tablet {
-    height: 80px;
-    width: auto;
+    height: 55px;
   }
 
   @include mobile {
-    height: 68px;
-    width: 68px;
-
+    height: 45px;
   }
 }
 
 .map {
-
     max-width: 23px;
     max-height: 19px;
 
