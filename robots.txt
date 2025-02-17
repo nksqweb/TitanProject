@@ -1,9 +1,7 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
-Disallow: /tmp/
+Disallow: /competitions.html
 Allow: /
 
-Sitemap: https://titan-taishet.ru/sitemap.xml
+Crawl-delay: 5
 
-Disallow: /yandex_bf153dfa231f9b59.html
+Sitemap: https://titan-taishet.ru/sitemap.xml
